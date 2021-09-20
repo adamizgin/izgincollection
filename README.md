@@ -1,2 +1,0 @@
-# izgincollection
-IZGIN Collection
