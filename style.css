@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+* {
+	margin:  0;
+	padding: 0;
+	font-family: Helvetica, Arial, Sans-Serif;
+	color: #000;
+}
+
+html, body {
+	background: #fff;
+	overflow-x: hidden;
+}
+
+.no-select {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+p {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+#wrapper {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+#header {
+	width:  calc(100vw - 50px);
+	height: auto;
+	background: #fff;
+	box-shadow: 0 0 10px 0 #0003;
+	position: fixed;
+	padding: 15px 0 15px 50px;
+	top: 0;
+	z-index: 4;
+}
+
+#header h1 {
+	font-size: 27px;
+	font-weight: 400;
+	font-family: 'Playball';
+}
+
+#ham {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	width: 35px;
+	height: 35px;
+	background: transparent;
+	border-radius: 50%;
+	transition: all 250ms ease-in-out;
+}
+#ham:active {
+	background: #0003;
+}
+
+.hamLine {
+	width: 60%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#ham1 {
+	top: 25%;
+}
+
+#ham2 {
+	top: 50%;
+}
+
+#ham3 {
+	top: 75%;
+}
+
+#kunosho {
+	width:  60px;
+	height:  25px;
+	position: absolute;
+	top:  50%;
+	right: 15px;
+	transform: translateY(-50%);
+}
+
+#kunosho img {
+	width: 100%;
+}
+
+#kunosho div {
+	width:  100%;
+	height:  100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.main {
+	position: absolute;
+	width: calc(100% - 60px);
+	height: auto;
+	min-height: 40vh;
+	transition: all 200ms ease-in-out;
+	top: 100px;
+	left: 150vw;
+	transform: translateX(-50%);
+	display: none;
+}
+
+#home-page {
+	left: 50%;
+	display: block;
+}
+
+.content {
+	width: 100%;
+	text-align: justify;
+}
+
+.content h2 {
+	font-weight: 400;
+}
+
+#home-coll {
+	border: none;
+	background: #000;
+	border-radius: 0;
+	color: #fff;
+	padding: 15px 20px;
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#menu {
+	width: 75%;
+	height: 100vh;
+	background: #fff;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: -75%;
+	box-shadow: 0 0 10px 0 #0003;
+	border-right: 1px solid #0003;
+	transition: all 200ms ease-in-out;
+	display: none;
+}
+
+#menu-close {
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	margin: 30px;
+	position: relative;
+	border-radius: 50%;
+	transition: all 200ms ease-in-out;
+}
+#menu-close:active {
+	background: #0003;
+}
+
+.close-line {
+	width: 60%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#close1 {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+#close2 {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#menu-content {
+	width: 80%;
+	height: 75%;
+	background: transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#menu-content ul {
+	padding: 25px;
+}
+
+#menu-content li {
+	list-style: none;
+	font-size: 20px;
+}
+#menu-content li i {
+	margin-right: 5px;
+}
+
+#menu-content hr {
+	border: none;
+	border-top: 1px solid #0001;
+	margin: 10px 0;
+}
+
+#menu-stop {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: #000d;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	display: none;
+}
+
+.card {
+	width: 250px;
+	height: 100px;
+	background: #111;
+	border-radius: 5px;
+	margin: 0 5px 0 0;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 0 5px 0 #0003;
+}
+.card * {
+	color: #fff;
+}
+
+.card h5 {
+	position: absolute;
+	top: 20px;
+	left: 60px;
+	font-size: 20px;
+}
+
+.card-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	background: url('https://i.ibb.co/q1c8z7t/IZGIN-Collection-1.png');
+	background-size: cover;
+}
+
+.card-buttons {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.card a {
+	color: #0000;
+	text-decoration: none;
+}
+
+.card-buttons button {
+	background: #000;
+	color: #fffc;
+	border: none;
+	border-radius: 3px;
+	margin: 0 5px 0 0;
+	position: relative;
+	padding: 8px;
+}
+
+#products-page h2 {
+	font-family: 'Marcellus';
+}
+
+#products-page hr {
+	border: none;
+	border-bottom: 1px solid #0001;
+}
+
+.preview {
+	max-width: calc(100% - 30px);
+	height: 370px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 #0003;
+	padding: 15px;
+	position: relative;
+}
+.preview img {
+	width: 100%;
+	max-height: 50%;
+	border: 1px solid #0001;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.preview-bottom {
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 30px);
+	height: calc(50% - 15px);
+}
+.preview-text {
+	width: 100%;
+	max-height: calc(100% - 80px);
+	background: #fff;
+	position: absolute;
+	overflow-y: scroll;
+	top: 47.5%;
+	transform: translateY(-50%);
+}
+.preview-price {
+	position: absolute;
+	bottom: 10px;
+	font-weight: 100;
+}
+
+#product-info {
+	width: 100vw;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 100vw;
+	z-index: 6;
+	transition: all 200ms ease-in-out;
+	display: none;
+	overflow-y: hidden;
+}
+
+#info-header {
+	width: calc(100vw - 50px);
+	height: auto;
+	background: #fff;
+	box-shadow: 0 0 10px 0 #0003;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 6;
+	padding: 25px;
+}
+
+#back-button {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	width: 35px;
+	height: 35px;
+	background: transparent;
+	transition: all 200ms ease-in-out;
+	border-radius: 50%;
+}
+#back-button:active {
+	background: #0003;
+}
+
+#back-button i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
