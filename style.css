@@ -5,11 +5,11 @@
 	margin:  0;
 	padding: 0;
 	font-family: Helvetica, Arial, Sans-Serif;
-	color: #000;
+	color: #fff;
 }
 
 html, body {
-	background: #fff;
+	background: #000;
 	overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ p {
 #header {
 	width:  calc(100vw - 50px);
 	height: auto;
-	background: #fff;
+	background: #111;
 	box-shadow: 0 0 10px 0 #0003;
 	position: fixed;
 	padding: 15px 0 15px 50px;
@@ -57,13 +57,13 @@ p {
 	transition: all 250ms ease-in-out;
 }
 #ham:active {
-	background: #0003;
+	background: #fff3;
 }
 
 .hamLine {
 	width: 60%;
 	height: 2px;
-	background: #000;
+	background: #fff;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -92,6 +92,7 @@ p {
 
 #kunosho img {
 	width: 100%;
+	filter: invert(92.5%);
 }
 
 #kunosho div {
@@ -131,7 +132,7 @@ p {
 
 #home-coll {
 	border: none;
-	background: #000;
+	background: #58f;
 	border-radius: 0;
 	color: #fff;
 	padding: 15px 20px;
@@ -144,7 +145,7 @@ p {
 #menu {
 	width: 75%;
 	height: 100vh;
-	background: #fff;
+	background: #000;
 	position: fixed;
 	z-index: 5;
 	top: 0;
@@ -165,13 +166,13 @@ p {
 	transition: all 200ms ease-in-out;
 }
 #menu-close:active {
-	background: #0003;
+	background: #fff3;
 }
 
 .close-line {
 	width: 60%;
 	height: 2px;
-	background: #000;
+	background: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -284,7 +285,7 @@ p {
 .preview {
 	max-width: calc(100% - 30px);
 	height: 370px;
-	background: #fff;
+	background: #151515;
 	border-radius: 5px;
 	box-shadow: 0 0 10px 0 #0003;
 	padding: 15px;
@@ -306,7 +307,7 @@ p {
 .preview-text {
 	width: 100%;
 	max-height: calc(100% - 80px);
-	background: #fff;
+	background: transparent;
 	position: absolute;
 	overflow-y: scroll;
 	top: 47.5%;
@@ -321,7 +322,7 @@ p {
 #product-info {
 	width: 100vw;
 	height: 100%;
-	background: #fff;
+	background: #111;
 	position: absolute;
 	top: 0;
 	left: 100vw;
@@ -334,7 +335,7 @@ p {
 #info-header {
 	width: calc(100vw - 50px);
 	height: auto;
-	background: #fff;
+	background: #222;
 	box-shadow: 0 0 10px 0 #0003;
 	position: absolute;
 	left: 0;
@@ -364,4 +365,33 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+#product-wrapper {
+	top: 50px;
+	width: 100vw;
+	height: calc(100vh - 200px);
+	position: relative;
+}
+
+.product-wrapper {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.product-wrapper img {
+	width: 100%;
+	max-height: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.product-wrapper .full-img {
+	width: 80%;
 }
