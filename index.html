@@ -51,8 +51,8 @@
 					<div id="ham3" class="hamLine"></div>
 				</div>
 				<h1>IZGIN Collection</h1>
-				<div id="kunosho">
-					<img src="https://i.imgur.com/x032Nik.png" alt="">
+				<div class="kunosho">
+					<h3>ܟܘܢܫܐ</h3>
 					<div></div>
 				</div>
 			</div>
@@ -61,10 +61,9 @@
 				<div class="content">
 					<h2>Welcome to IZGIN Collection!</h2>
 					<br>
-					<p><b>IZGIN Collection</b> is a collection of products that are made by Arameans, such as prayers in Aramaic (the language of Jesus Christ). But also sell other products (which for the most part targets the Aramean people).</p>
+					<p><b>IZGIN Collection</b> is a collection of products, such as prayers in Aramaic (the language of Jesus Christ). But also sell other products (which for the most part target the Aramean people).</p>
 					<br>
-					<h2>We aim for quality</h2>
-					<p>Our products will always be made by the best designers who are remarkably meticulous and work to get every little detail just right.</p>
+					<p>The products are all designed by me and made of the highest quality. The main font used in the products is called Serto BeQaco and made out of my handwriting.</p>
 					<br><br><br>
 					<button id="home-coll" class="no-select" onclick="currentPage = '#products-page';changePage();">SEE COLLECTION</button>
 				</div>
@@ -92,7 +91,7 @@
 				<br><br>
 				<h2>Decoration</h2>
 				<hr><br>
-				<div class="preview no-select" id="preview1" onclick="product = 'p1';">
+				<div class="preview no-select" id="preview1" onclick="product = 1;">
 					<img src="https://i.imgur.com/KEfeaBg.jpg" alt="">
 					<div class="preview-bottom">
 						<h3>Lord's prayer golden frame</h3>
@@ -113,13 +112,27 @@
 			<div id="info-header">
 				<div id="back-button" onclick="back();">
 					<i class="fas fa-chevron-circle-left"></i>
-					<h1 style="font-size:26px;font-weight: 400;font-family: 'Playball';position: absolute;top:50%;left:50px;transform: translateY(-50%);display: inline-block;word-break: keep-all;white-space: nowrap;">IZGIN Collection</h1>
+				</div>
+				<h1 style="font-size:26px;font-weight: 400;font-family: 'Cabin';display: inline-block;word-break: keep-all;white-space: nowrap;">IZGIN Collection</h1>
+				<div class="kunosho">
+					<h3>ܟܘܢܫܐ</h3>
+					<div></div>
 				</div>
 			</div>
 
 			<div id="product-wrapper">
-				<div class="product-wrapper">
+				<div class="product-wrapper" id="product-wrapper-1-1">
 					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg" alt="" class="full-img">
+				</div>
+				<div class="product-wrapper" id="product-wrapper-1-2">
+					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_2.jpg" alt="" class="full-img">
+				</div>
+
+				<div class="product-switch left-switch no-select" onclick="currentProduct -= 1;productSwitch();">
+					<i class="fas fa-caret-left"></i>
+				</div>
+				<div class="product-switch right-switch no-select" onclick="currentProduct += 1;productSwitch();">
+					<i class="fas fa-caret-right" style="transform: translate(-45%, -50%);"></i>
 				</div>
 			</div>
 		</div>
