@@ -197,7 +197,7 @@ function productSwitch() {
 					$('#product-wrapper-1-2').css({
 						'left': '100%'
 					});
-				}, 1000);
+				});
 			} else if (currentProduct == 2) {
 				setTimeout(function() {
 					$('#product-wrapper-1-1').css({
@@ -206,8 +206,8 @@ function productSwitch() {
 					$('#product-wrapper-1-2').css({
 						'left': '0'
 					});
-				}, 1000);
+				}, );
 			}
-		});
+		}, 300);
 	}
 }
