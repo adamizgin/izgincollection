@@ -193,17 +193,19 @@ function productSwitch() {
 				$('#product-wrapper-1-1').css({
 					'left': '0'
 				});
+				$('#product-wrapper-1-2').css({
+					'left': '100%'
+				});
 			});
-			$('#product-wrapper-1-2').css({
-				'left': '100%'
-			}, 1000);
 		} else if (currentProduct == 2) {
-			$('#product-wrapper-1-1').css({
-				'left': '-100%'
+			setTimeout(function() {
+				$('#product-wrapper-1-1').css({
+					'left': '-100%'
+				});
+				$('#product-wrapper-1-2').css({
+					'left': '0'
+				});
 			});
-			$('#product-wrapper-1-2').css({
-				'left': '0'
-			}, 1000);
 		}
 	}
 }
