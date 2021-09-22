@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@font-face {
+	font-family: 'Serto BeQaco Bold';
+	src: url('Serto-BeQaco-Bold.ttf');
+}
 
 * {
 	margin:  0;
@@ -11,6 +16,7 @@
 html, body {
 	background: #000;
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 .no-select {
@@ -42,7 +48,7 @@ p {
 #header h1 {
 	font-size: 27px;
 	font-weight: 400;
-	font-family: 'Playball';
+	font-family: 'Cabin';
 }
 
 #ham {
@@ -81,21 +87,19 @@ p {
 	top: 75%;
 }
 
-#kunosho {
-	width:  60px;
-	height:  25px;
+.kunosho {
 	position: absolute;
 	top:  50%;
 	right: 15px;
 	transform: translateY(-50%);
 }
 
-#kunosho img {
-	width: 100%;
-	filter: invert(92.5%);
+.kunosho h3 {
+	font-family: 'Serto BeQaco Bold';
+	font-size: 35px;
 }
 
-#kunosho div {
+.kunosho div {
 	width:  100%;
 	height:  100%;
 	position: absolute;
@@ -283,7 +287,8 @@ p {
 }
 
 .preview {
-	max-width: calc(100% - 30px);
+	width: calc(100% - 30px);
+	max-width: 325px;
 	height: 370px;
 	background: #151515;
 	border-radius: 5px;
@@ -333,7 +338,7 @@ p {
 }
 
 #info-header {
-	width: calc(100vw - 50px);
+	width: calc(100vw - 65px);
 	height: auto;
 	background: #222;
 	box-shadow: 0 0 10px 0 #0003;
@@ -341,7 +346,7 @@ p {
 	left: 0;
 	top: 0;
 	z-index: 6;
-	padding: 25px;
+	padding: 15px 15px 15px 50px;
 }
 
 #back-button {
@@ -372,6 +377,7 @@ p {
 	width: 100vw;
 	height: calc(100vh - 200px);
 	position: relative;
+	overflow-x: hidden;
 }
 
 .product-wrapper {
@@ -380,6 +386,11 @@ p {
 	background: #000;
 	position: absolute;
 	top: 0;
+	left: 100vw;
+	transition: all 250ms ease-in-out;
+}
+
+#product-wrapper-1-1 {
 	left: 0;
 }
 
@@ -394,4 +405,32 @@ p {
 
 .product-wrapper .full-img {
 	width: 80%;
+}
+
+.product-switch {
+	width: 50px;
+	height: 50px;
+	background: #aaa8;
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+}
+
+.left-switch {
+	left: 15px;
+}
+
+.right-switch {
+	right: 15px;
+}
+
+.product-switch i {
+	color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-75%, -50%);
+	font-size: 30px;
 }
