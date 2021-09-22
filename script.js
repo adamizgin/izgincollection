@@ -183,25 +183,27 @@ function back() {
 function productSwitch() {
 	if (product == 1) {
 		if (currentProduct == 0) {
-			currentProduct = 5;
-		} else if (currentProduct == 6) {
+			currentProduct = 2;
+		} else if (currentProduct == 3) {
 			currentProduct = 1;
 		}
 
 		else if (currentProduct == 1) {
-			$('#product-wrapper-1-1').css({
-				'left': '0'
+			setTimeout(function() {
+				$('#product-wrapper-1-1').css({
+					'left': '0'
+				});
 			});
 			$('#product-wrapper-1-2').css({
 				'left': '100%'
-			});
+			}, 1000);
 		} else if (currentProduct == 2) {
 			$('#product-wrapper-1-1').css({
 				'left': '-100%'
 			});
 			$('#product-wrapper-1-2').css({
 				'left': '0'
-			});
+			}, 1000);
 		}
 	}
 }
