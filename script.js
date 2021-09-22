@@ -1,6 +1,7 @@
 var currentPage = "#home-page";
 var prePage;
 var product;
+var currentProduct = 1;
 
 $(document).ready(function() {
 	setTimeout(function() {
@@ -75,85 +76,85 @@ function changePage() {
 			$('#home-page').css({
 				'display': 'block'
 			});
+			$('#products-page').css({
+				'left': '150vw'
+			});
+			$('#settings-page').css({
+				'left': '150vw'
+			});
+			$('#help-page').css({
+				'left': '150vw'
+			});
 			setTimeout(function() {
 				$('#home-page').css({
 					'left': '50vw'
-				});
-				$('#products-page').css({
-					'left': '150vw'
-				});
-				$('#settings-page').css({
-					'left': '150vw'
-				});
-				$('#help-page').css({
-					'left': '150vw'
 				});
 				setTimeout(function() {
 					$('#products-page').hide();
 					$('#settings-page').hide();
 					$('#help-page').hide();
 				}, 250);
-			});
+			}, 100);
 		} else if (currentPage == "#products-page") {
 			$('#products-page').css({
 				'display': 'block'
 			});
+			$('#home-page').css({
+				'left': '150vw'
+			});
+			$('#settings-page').css({
+				'left': '150vw'
+			});
+			$('#help-page').css({
+				'left': '150vw'
+			});
 			setTimeout(function() {
-				$('#home-page').css({
-					'left': '150vw'
-				});
 				$('#products-page').css({
 					'left': '50vw'
-				});
-				$('#settings-page').css({
-					'left': '150vw'
-				});
-				$('#help-page').css({
-					'left': '150vw'
 				});
 				setTimeout(function() {
 					$('#home-page').hide();
 					$('#settings-page').hide();
 					$('#help-page').hide();
 				}, 250);
-			});
+			}, 100);
 		} else if (currentPage == "#settings-page") {
 			$('#settings-page').css({
 				'display': 'block'
 			});
+			$('#home-page').css({
+				'left': '150vw'
+			});
+			$('#products-page').css({
+				'left': '150vw'
+			});
+			$('#help-page').css({
+				'left': '150vw'
+			});
 			setTimeout(function() {
-				$('#home-page').css({
-					'left': '150vw'
-				});
-				$('#products-page').css({
-					'left': '150vw'
-				});
 				$('#settings-page').css({
 					'left': '50vw'
-				});
-				$('#help-page').css({
-					'left': '150vw'
 				});
 				setTimeout(function() {
 					$('#home-page').hide();
 					$('#products-page').hide();
 					$('#help-page').hide();
 				}, 250);
-			});
+			}, 100);
 		} else if (currentPage == "#help-page") {
 			$('#help-page').css({
 				'display': 'block'
 			});
+			$('#home-page').css({
+				'left': '150vw'
+			});
+			$('#products-page').css({
+				'left': '150vw'
+			});
+			$('#settings-page').css({
+				'left': '150vw'
+			});
 			setTimeout(function() {
-				$('#home-page').css({
-					'left': '150vw'
-				});
-				$('#products-page').css({
-					'left': '150vw'
-				});
-				$('#settings-page').css({
-					'left': '150vw'
-				});
 				$('#help-page').css({
 					'left': '50vw'
 				});
@@ -162,7 +163,7 @@ function changePage() {
 					$('#products-page').hide();
 					$('#settings-page').hide();
 				}, 250);
-			});
+			}, 100);
 		}
 	});
 }
@@ -177,4 +178,30 @@ function back() {
 			$('#product-info').hide();
 		}, 200);
 	});
+}
+
+function productSwitch() {
+	if (product == 1) {
+		if (currentProduct == 0) {
+			currentProduct = 5;
+		} else if (currentProduct == 6) {
+			currentProduct = 1;
+		}
+
+		else if (currentProduct == 1) {
+			$('#product-wrapper-1-1').css({
+				'left': '0'
+			});
+			$('#product-wrapper-1-2').css({
+				'left': '100%'
+			});
+		} else if (currentProduct == 2) {
+			$('#product-wrapper-1-1').css({
+				'left': '-100%'
+			});
+			$('#product-wrapper-1-2').css({
+				'left': '0'
+			});
+		}
+	}
 }
