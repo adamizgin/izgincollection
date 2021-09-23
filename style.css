@@ -132,6 +132,7 @@ p {
 
 .content h2 {
 	font-weight: 400;
+	white-space: nowrap;
 }
 
 #home-coll {
@@ -434,4 +435,8 @@ p {
 	left: 50%;
 	transform: translate(-75%, -50%);
 	font-size: 30px;
+}
+
+#product-content {
+	padding: 65px 15px;
 }
