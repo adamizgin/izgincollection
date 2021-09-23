@@ -24,9 +24,14 @@ html, body {
 	user-select: none;
 }
 
-p {
+p, li {
 	font-size: 18px;
 	line-height: 25px;
+	margin: 0 0 10px 0;
+}
+
+h3 {
+	margin: 0 0 10px;
 }
 
 #wrapper {
@@ -97,6 +102,7 @@ p {
 .kunosho h3 {
 	font-family: 'Serto BeQaco Bold';
 	font-size: 35px;
+	margin: 0;
 }
 
 .kunosho div {
@@ -130,8 +136,9 @@ p {
 	text-align: justify;
 }
 
-.content h2 {
-	font-weight: 400;
+.content h1 {
+	font-size: 23px;
+	font-weight: 300;
 	white-space: nowrap;
 }
 
@@ -279,13 +286,14 @@ p {
 	padding: 8px;
 }
 
-#products-page h2 {
+h2 {
 	font-family: 'Marcellus';
 }
 
-#products-page hr {
+hr {
 	border: none;
-	border-bottom: 1px solid #0001;
+	border-bottom: 1px solid #fff2;
+	margin-top: 10px;
 }
 
 .preview {
@@ -309,11 +317,11 @@ p {
 	position: absolute;
 	bottom: 0;
 	width: calc(100% - 30px);
-	height: calc(50% - 15px);
+	height: 50%;
 }
 .preview-text {
 	width: 100%;
-	max-height: calc(100% - 80px);
+	height: calc(100% - 80px);
 	background: transparent;
 	position: absolute;
 	overflow-y: scroll;
@@ -328,7 +336,6 @@ p {
 
 #product-info {
 	width: 100vw;
-	height: 100%;
 	background: #111;
 	position: absolute;
 	top: 0;
@@ -439,4 +446,8 @@ p {
 
 #product-content {
 	padding: 65px 15px;
+}
+
+ul, ol {
+	margin: 15px 18px;
 }
