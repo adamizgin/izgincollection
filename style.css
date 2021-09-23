@@ -387,7 +387,7 @@ p {
 	position: absolute;
 	top: 0;
 	left: 100vw;
-	transition: all 1000ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 #product-wrapper-1-1 {
