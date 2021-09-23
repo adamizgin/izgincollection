@@ -2,11 +2,15 @@ var currentPage = "#home-page";
 var prePage;
 var product;
 var currentProduct = 1;
+var products = {
+	abun: "The Lord's Prayer in Aramaic according to Syriac tradition. This artwork includes both the traditional frame design from the ancient Syriac Church, but also the modern colours black and gold with a stone texture on a flat surface."
+}
 
 $(document).ready(function() {
 	setTimeout(function() {
 		$('#loading-page').hide();
 	}, 300);
+	$('.abun').html(products.abun);
 	$('#ham').click(function() {
 		$('#menu').css({
 			'display': 'block'
@@ -208,6 +212,6 @@ function productSwitch() {
 					});
 				}, );
 			}
-		}, 300);
+		});
 	}
 }
