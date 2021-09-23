@@ -317,7 +317,7 @@ hr {
 	position: absolute;
 	bottom: 0;
 	width: calc(100% - 30px);
-	height: 50%;
+	height: calc(50% - 20px);
 }
 .preview-text {
 	width: 100%;
