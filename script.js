@@ -189,7 +189,7 @@ function productSwitch() {
 				currentProduct = 1;
 			}
 
-			else if (currentProduct == 1) {
+			if (currentProduct == 1) {
 				setTimeout(function() {
 					$('#product-wrapper-1-1').css({
 						'left': '0'
