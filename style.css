@@ -144,6 +144,7 @@ p {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+	white-space: nowrap;
 }
 
 #menu {
