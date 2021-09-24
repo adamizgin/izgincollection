@@ -83,7 +83,7 @@ function changePage() {
 			$('#products-page').css({
 				'left': '150vw'
 			});
-			$('#settings-page').css({
+			$('#contact-page').css({
 				'left': '150vw'
 			});
 			$('#help-page').css({
@@ -95,7 +95,7 @@ function changePage() {
 				});
 				setTimeout(function() {
 					$('#products-page').hide();
-					$('#settings-page').hide();
+					$('#contact-page').hide();
 					$('#help-page').hide();
 				}, 250);
 			}, 100);
@@ -106,7 +106,7 @@ function changePage() {
 			$('#home-page').css({
 				'left': '150vw'
 			});
-			$('#settings-page').css({
+			$('#contact-page').css({
 				'left': '150vw'
 			});
 			$('#help-page').css({
@@ -118,12 +118,12 @@ function changePage() {
 				});
 				setTimeout(function() {
 					$('#home-page').hide();
-					$('#settings-page').hide();
+					$('#contact-page').hide();
 					$('#help-page').hide();
 				}, 250);
 			}, 100);
-		} else if (currentPage == "#settings-page") {
-			$('#settings-page').css({
+		} else if (currentPage == "#contact-page") {
+			$('#contact-page').css({
 				'display': 'block'
 			});
 			$('#home-page').css({
@@ -136,7 +136,7 @@ function changePage() {
 				'left': '150vw'
 			});
 			setTimeout(function() {
-				$('#settings-page').css({
+				$('#contact-page').css({
 					'left': '50vw'
 				});
 				setTimeout(function() {
@@ -155,7 +155,7 @@ function changePage() {
 			$('#products-page').css({
 				'left': '150vw'
 			});
-			$('#settings-page').css({
+			$('#contact-page').css({
 				'left': '150vw'
 			});
 			setTimeout(function() {
@@ -165,7 +165,7 @@ function changePage() {
 				setTimeout(function() {
 					$('#home-page').hide();
 					$('#products-page').hide();
-					$('#settings-page').hide();
+					$('#contact-page').hide();
 				}, 250);
 			}, 100);
 		}
