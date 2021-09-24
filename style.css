@@ -241,7 +241,7 @@ h3 {
 	height: 100px;
 	background: #111;
 	border-radius: 5px;
-	margin: 0 5px 0 0;
+	margin: 0 5px 10px 0;
 	padding: 10px;
 	position: relative;
 	box-shadow: 0 0 5px 0 #0003;
@@ -293,7 +293,7 @@ h2 {
 hr {
 	border: none;
 	border-bottom: 1px solid #fff2;
-	margin-top: 10px;
+	margin: 10px 0;
 }
 
 .preview {
