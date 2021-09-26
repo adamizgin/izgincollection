@@ -360,7 +360,7 @@ hr {
 	height: auto;
 	background: #222;
 	box-shadow: 0 0 10px 0 #0003;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	z-index: 6;
