@@ -451,3 +451,12 @@ hr {
 ul, ol {
 	margin: 15px 25px;
 }
+
+#help-page h4 {
+	text-decoration: underline;
+	font-size: 25px;
+}
+
+#help-page p {
+	text-align: justify;
+}
