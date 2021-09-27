@@ -34,6 +34,10 @@ h3 {
 	margin: 0 0 10px;
 }
 
+a {
+	color: #00f;
+}
+
 #wrapper {
 	width: 100vw;
 	overflow-x: hidden;
@@ -53,7 +57,7 @@ h3 {
 .header-border {
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(90deg, #444 0%, #fff 100%);
+	background: linear-gradient(90deg, #345 0%, #fff 100%);
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -63,6 +67,7 @@ h3 {
 	font-size: 27px;
 	font-weight: 400;
 	font-family: 'Cabin';
+	color: #345;
 }
 
 #ham {
@@ -83,7 +88,7 @@ h3 {
 .hamLine {
 	width: 60%;
 	height: 2px;
-	background: #000;
+	background: #123;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -154,7 +159,7 @@ h3 {
 
 #home-coll {
 	border: none;
-	background: #58f;
+	background: #358;
 	border-radius: 0;
 	color: #fff;
 	padding: 15px 20px;
@@ -163,6 +168,7 @@ h3 {
 	left: 50%;
 	transform: translateX(-50%);
 	white-space: nowrap;
+	box-shadow: 0 0 10px 0 #0003;
 }
 
 #menu {
@@ -248,13 +254,15 @@ h3 {
 
 .card {
 	width: calc(100% - 20px);
-	height: 100px;
-	background: #111;
+	max-width: 450px;
+	height: 120px;
+	background: #182028;
 	border-radius: 5px;
 	margin: 0 5px 10px 0;
 	padding: 10px;
 	position: relative;
 	box-shadow: 0 0 5px 0 #0003;
+	display: inline-block;
 }
 .card * {
 	color: #fff;
@@ -262,14 +270,14 @@ h3 {
 
 .card h5 {
 	position: absolute;
-	top: 20px;
-	left: 60px;
+	top: 25px;
+	left: 70px;
 	font-size: 20px;
 }
 
 .card-icon {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	border-radius: 5px;
 	background: url('https://i.ibb.co/q1c8z7t/IZGIN-Collection-1.png');
 	background-size: cover;
@@ -287,13 +295,14 @@ h3 {
 }
 
 .card-buttons button {
-	background: linear-gradient(90deg, #fe0 0%, #fa0 50%);
-	color: #000;
+	background: #fff;
+	color: #182028;
 	border: none;
-	border-radius: 3px;
+	border-radius: 2px;
 	margin: 0 5px 0 0;
 	position: relative;
-	padding: 8px;
+	padding: 10px;
+	font-size: 16px;
 }
 
 h2 {
@@ -430,24 +439,25 @@ hr {
 .product-switch {
 	width: 50px;
 	height: 50px;
-	background: #aaa8;
+	background: #182028af;
 	position: absolute;
 	z-index: 3;
 	top: 50%;
 	transform: translateY(-50%);
 	border-radius: 50%;
+	box-shadow: 0 0 10px 0 #0005;
 }
 
 .left-switch {
-	left: 15px;
+	left: 10px;
 }
 
 .right-switch {
-	right: 15px;
+	right: 10px;
 }
 
 .product-switch i {
-	color: #000;
+	color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
