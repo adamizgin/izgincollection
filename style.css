@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 @font-face {
 	font-family: 'Serto BeQaco Bold';
@@ -36,6 +37,13 @@ h3 {
 
 a {
 	color: #00f;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #wrapper {
@@ -201,7 +209,7 @@ a {
 .close-line {
 	width: 60%;
 	height: 2px;
-	background: #000;
+	background: #345;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -230,9 +238,11 @@ a {
 #menu-content li {
 	list-style: none;
 	font-size: 20px;
+	color: #345;
 }
 #menu-content li i {
 	margin-right: 5px;
+	color: #345;
 }
 
 #menu-content hr {
@@ -398,6 +408,7 @@ hr {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	color: #345;
 }
 
 #product-wrapper {
@@ -480,4 +491,140 @@ ul, ol {
 
 #help-page p {
 	text-align: justify;
+}
+
+/*@media screen and (min-width: 700px) {
+	#wrapper {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.main-computer {
+		display: none;
+	}
+}*/
+
+
+.main-computer {
+	width: 100%;
+	height: auto;
+	min-height: 40vh;
+	top: 100px;
+	display: none;
+}
+
+#home-page-computer {
+	background: url('Suryoyo_wallpaper_kthobonoyo_syriac_script_manuscript_oromoyo_suryaya_aramaya.jpg');
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0;
+}
+
+.computer a {
+	text-decoration: none;
+}
+
+#computer-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #58fe;
+}
+
+#home-page-computer .content {
+	position: absolute;
+	min-height: 100%;
+}
+
+#home-page-computer h2 {
+	font-size: 50px;
+	font-family: Roboto;
+}
+
+#home-page-computer :is(h2, p, b) {
+	color: #fff;
+}
+
+#home-page-computer p {
+	font-size: 30px;
+	margin: 15px 0 0;
+	line-height: 40px;
+}
+
+#comp-header {
+	width: calc(100% - 30px);
+    border-bottom: 1px solid #ffffff20;
+    height: 70px;
+    background: transparent;
+    padding: 15px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+
+#comp-header * {
+	color: #fff;
+}
+
+#header-content {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-button {
+	height: calc(100% - 30px);
+    display: inline-block;
+    width: auto;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 230ms ease-in-out;
+}
+
+.header-button :is(h3, h1) {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: all 250ms ease-in-out;
+    display: block;
+    white-space: nowrap;
+}
+
+.header-button i {
+	margin: 0 5px;
+}
+
+.header-animation {
+	width: 1px;
+    height: 0%;
+    background: #f00;
+    position: absolute;
+    transition: height 250ms ease-in-out;
+}
+
+.header-animation-left {
+	left: 0;
+	top: 0;
+}
+
+.header-animation-right {
+	right: 0;
+	bottom: 0;
+}
+
+.header-hidden {
+	opacity: 0;
+    position: static!important;
 }
