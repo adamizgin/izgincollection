@@ -93,10 +93,22 @@
 				<br><br>
 				<h2>Decoration</h2>
 				<hr><br>
-				<div class="preview no-select" id="preview1" onclick="product = 1;">
+
+				<div class="preview no-select" id="preview1" onclick="product = 1;chooseProduct();">
 					<img src="https://i.imgur.com/KEfeaBg.jpg" alt="">
 					<div class="preview-bottom">
 						<h4>Lord's prayer golden frame</h4>
+						<div class="preview-text">
+							<p class="abun"></p>
+						</div>
+						<span class="preview-price">60€</span>
+					</div>
+				</div>
+
+				<div class="preview no-select" id="preview2" onclick="product = 2;chooseProduct();">
+					<img src="lords_prayer_aramaic_cross_on_wall_2.jpg" alt="">
+					<div class="preview-bottom">
+						<h4>Lord's prayer Cross shaped</h4>
 						<div class="preview-text">
 							<p class="abun"></p>
 						</div>
@@ -183,10 +195,10 @@
 
 			<div id="product-wrapper">
 				<div class="product-wrapper" id="product-wrapper-1-1">
-					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg" alt="" class="full-img">
+					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg" alt="" class="full-img" id="product-1">
 				</div>
 				<div class="product-wrapper" id="product-wrapper-1-2">
-					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_2.jpg" alt="" class="full-img">
+					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_2.jpg" alt="" class="full-img" id="product-2">
 				</div>
 
 				<div class="product-switch left-switch no-select" onclick="currentProduct -= 1;productSwitch();">
@@ -204,104 +216,41 @@
 				<br>
 				<p>This product is available in these materials and sizes – and what they cost:</p>
 				<br>
-				<h2>Forex board</h2>
-				<hr>
-				<ol>
-					<li>20×30 cm – 60€</li>
-					<li>30×45 cm – 65€</li>
-					<li>40×60 cm – 68€</li>
-					<li>50×75 cm – 85€</li>
-					<li>60×90 cm – 100€</li>
-					<li>80×120 cm – 158€</li>
-					<li>100×150 cm – 230€</li>
-				</ol>
-				<br>
-				<h2>Acrylic glass</h2>
-				<hr>
-				<ol>
-					<li>20×30 cm – 62€</li>
-					<li>30×45 cm – 76€</li>
-					<li>40×60 cm – 95€</li>
-					<li>50×75 cm – 120€</li>
-					<li>60×90 cm – 158€</li>
-					<li>80×120 cm – 220€</li>
-					<li>100×150 cm – 330€</li>
-				</ol>
-				<br>
-				<h2>Acrylic aluminium glass</h2>
-				<hr>
-				<ol>
-					<li>20×30 cm – 70€</li>
-					<li>30×45 cm – 85€</li>
-					<li>40×60 cm – 110€</li>
-					<li>50×75 cm – 158€</li>
-					<li>60×90 cm – 238€</li>
-					<li>80×120 cm – 338€</li>
-					<li>100×150 cm – 468€</li>
-				</ol>
-				<br><br><br>
-				<p>Additions:</p><br>
-				<h2>Wall mount</h2>
-				<hr><br>
-				<h2>Forex board:</h2>
-				<ol>
-					<li>screw bolts – 10€</li>
-					<li>clamps – 10€</li>
-					<li>invisible – 30€</li>
-				</ol>
-				<br>
-				<h2>Acrylic glass:</h2>
-				<ol>
-					<li>crew bolts – 10€</li>
-					<li>clamps – 10€</li>
-				</ol>
-				<br>
-				<h2>Acrylic aluminium glass:</h2>
-				<ol>
-					<li>screw bolts – 10€</li>
-					<li>clamps – 10€</li>
-					<li>invisible – free (0€)</li>
-				</ol>
+				<div class="standard"></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="main-computer computer" id="home-page-computer">
 		<div id="comp-header">
+			<img src="izgin_collection_logo_transparent.png" alt="" id="comp-logo">
 			<div id="header-content">
 				<div class="header-button">
-					<a href="index.html">
-						<h1>IZGIN Collection</h1>
-						<h1 class="header-hidden">IZGIN Collection</h1>
-					</a>
+					<h3>Home</h3>
+					<h3 class="header-hidden">Home</h3>
+					<div class="header-animation header-animation-left"></div>
+					<div class="header-animation header-animation-right"></div>
 				</div>
 
 				<div class="header-button">
-					<a href="index.html">
-						<h3>Home</h3>
-						<h3 class="header-hidden">Home</h3>
-					</a>
+					<h3>Products</h3>
+					<h3 class="header-hidden">Products</h3>
+					<div class="header-animation header-animation-left"></div>
+					<div class="header-animation header-animation-right"></div>
 				</div>
 
 				<div class="header-button">
-					<a href="index.html">
-						<h3>Products</h3>
-						<h3 class="header-hidden">Products</h3>
-					</a>
+					<h3>Contact</h3>
+					<h3 class="header-hidden">Contact</h3>
+					<div class="header-animation header-animation-left"></div>
+					<div class="header-animation header-animation-right"></div>
 				</div>
 
 				<div class="header-button">
-					<a href="index.html">
-						<h3>Contact</h3>
-						<h3 class="header-hidden">Contact</h3>
-					</a>
-				</div>
-
-				<div class="header-button">
-					<a href="index.html">
-						<h3>FAQ (Help)</h3>
-						<h3 class="header-hidden">FAQ (Help)</h3>
-					</a>
+					<h3>FAQ (Help)</h3>
+					<h3 class="header-hidden">FAQ (Help)</h3>
+					<div class="header-animation header-animation-left"></div>
+					<div class="header-animation header-animation-right"></div>
 				</div>
 			</div>
 		</div>
