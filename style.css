@@ -334,6 +334,8 @@ hr {
 	box-shadow: 0 0 10px 0 #0003;
 	padding: 15px;
 	position: relative;
+	display: inline-block;
+	margin: 0 7.5px 15px;
 }
 .preview img {
 	width: 100%;
@@ -493,9 +495,49 @@ ul, ol {
 	text-align: justify;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+																					Computer
+																					Computer
+																					Computer
+																					Computer
+																					Computer
+																					Computer
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
 /*@media screen and (min-width: 700px) {
 	#wrapper {
 		display: none;
+	}
+	.main-computer {
+		display: block!important;
 	}
 }
 
@@ -504,6 +546,17 @@ ul, ol {
 		display: none;
 	}
 }*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 .main-computer {
@@ -574,11 +627,11 @@ ul, ol {
 }
 
 #header-content {
-	width: 100%;
+	width: auto;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 10px;
 }
 
 .header-button {
@@ -592,7 +645,11 @@ ul, ol {
     transition: all 230ms ease-in-out;
 }
 
-.header-button :is(h3, h1) {
+.header-button:hover {
+	background: #ffffff1a;
+}
+
+.header-button :is(h3) {
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -602,6 +659,11 @@ ul, ol {
     white-space: nowrap;
 }
 
+#comp-logo {
+	height: 100%;
+	filter: invert(100%);
+}
+
 .header-button i {
 	margin: 0 5px;
 }
@@ -609,7 +671,7 @@ ul, ol {
 .header-animation {
 	width: 1px;
     height: 0%;
-    background: #f00;
+    background: #fff5;
     position: absolute;
     transition: height 250ms ease-in-out;
 }
