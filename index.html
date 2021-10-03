@@ -88,16 +88,55 @@
 				</div>
 			</div>
 
+			<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 -->
+
 			<div class="main" id="products-page">
 				<em style="color: #345;">Below you will see previews for each product and its category. The products could be available in different colours, to see more details about a certain product, click on it.</em>
 				<br><br>
 				<h2>Decoration</h2>
 				<hr><br>
 
-				<div class="preview no-select" id="preview1" onclick="product = 1;chooseProduct();">
+				<div class="preview no-select" id="preview1" onclick="product = 1;chooseProduct();standard();">
 					<img src="https://i.imgur.com/KEfeaBg.jpg" alt="">
 					<div class="preview-bottom">
-						<h4>Lord's prayer golden frame</h4>
+						<h4>Lord's prayer</h4>
 						<div class="preview-text">
 							<p class="abun"></p>
 						</div>
@@ -105,14 +144,25 @@
 					</div>
 				</div>
 
-				<div class="preview no-select" id="preview2" onclick="product = 2;chooseProduct();">
+				<div class="preview no-select" id="preview2" onclick="product = 2;chooseProduct();standard();">
 					<img src="lords_prayer_aramaic_cross_on_wall_2.jpg" alt="">
 					<div class="preview-bottom">
-						<h4>Lord's prayer Cross shaped</h4>
+						<h4>Lord's prayer – Cross shaped</h4>
 						<div class="preview-text">
 							<p class="abun2"></p>
 						</div>
 						<span class="preview-price">60€</span>
+					</div>
+				</div>
+
+				<div class="preview no-select" id="preview2" onclick="product = 3;chooseProduct();semiPremium();">
+					<img src="Mary_and_Jesus_icon_aramaic_2.jpg" alt="">
+					<div class="preview-bottom">
+						<h4>Jesus and Mary – Choose your verse</h4>
+						<div class="preview-text">
+							<p class="abun3"></p>
+						</div>
+						<span class="preview-price">65€</span>
 					</div>
 				</div>
 			</div>
@@ -193,6 +243,52 @@
 				<div class="header-border"></div>
 			</div>
 
+
+
+
+
+
+
+
+
+
+
+			<!-- 
+
+
+
+
+			
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+								PRODUCTS
+
+
+
+
+
+			 -->
+
+
+
+
+
+
+
+
+
+
+
 			<div id="product-wrapper">
 				<div class="product-wrapper" id="product-wrapper-1-1">
 					<img src="Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg" alt="" class="full-img" id="product-1">
@@ -210,13 +306,14 @@
 			</div>
 
 			<div id="product-content">
-				<h3>Lord's prayer – golden frame</h3>
+				<h3 class="product-h3"></h3>
 				<br>
 				<p class="abun"></p>
 				<br>
 				<p>This product is available in these materials and sizes – and what they cost:</p>
 				<br>
 				<div class="standard"></div>
+				<div class="semi-premium"></div>
 			</div>
 		</div>
 	</div>
