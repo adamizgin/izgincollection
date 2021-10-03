@@ -4,19 +4,25 @@ var product;
 var currentProduct = 1;
 var products = {
 	abun: "The Lord's Prayer in Aramaic according to Syriac tradition. This artwork includes both the traditional frame design from the ancient Syriac Church, but also the modern colours black and gold with a stone texture on a flat surface.",
-	abun2: "The Lord's Prayer in Aramaic according to Syriac tradition – Shape of a Cross. This artwork includes both the traditional frame design from the ancient Syriac Church, but also the modern colours black and gold with a stone texture on a flat surface."
+	abun2: "The Lord's Prayer in Aramaic according to Syriac tradition – Shape of a Cross. This artwork includes both the traditional frame design from the ancient Syriac Church, but also the modern colours black and gold with a stone texture on a flat surface.",
+	maryJesus: "Icon of Mary and Jesus with a customizable Bible verse below the icon. The border design is as according to Syriac tradition but with a modern gold design and a stone texture."
 }
-var standard = "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 60€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic glass</h2> <hr> <ol> <li>20×30 cm – 62€</li> <li>30×45 cm – 76€</li> <li>40×60 cm – 95€</li> <li>50×75 cm – 120€</li> <li>60×90 cm – 158€</li> <li>80×120 cm – 220€</li> <li>100×150 cm – 330€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic glass:</h2> <ol> <li>crew bolts – 10€</li> <li>clamps – 10€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>";
+var specs = {
+	standard: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 60€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic glass</h2> <hr> <ol> <li>20×30 cm – 62€</li> <li>30×45 cm – 76€</li> <li>40×60 cm – 95€</li> <li>50×75 cm – 120€</li> <li>60×90 cm – 158€</li> <li>80×120 cm – 220€</li> <li>100×150 cm – 330€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic glass:</h2> <ol> <li>crew bolts – 10€</li> <li>clamps – 10€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>",
+	semiPremium: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 65€</li> <li>30×45 cm – 70€</li> <li>40×60 cm – 73€</li> <li>50×75 cm – 90€</li> <li>60×90 cm – 105€</li> <li>80×120 cm – 163€</li> <li>100×150 cm – 235€</li> </ol> <br> <h2>Acrylic glass</h2> <hr> <ol> <li>20×30 cm – 67€</li> <li>30×45 cm – 81€</li> <li>40×60 cm – 100€</li> <li>50×75 cm – 125€</li> <li>60×90 cm – 163€</li> <li>80×120 cm – 225€</li> <li>100×150 cm – 335€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 75€</li> <li>30×45 cm – 90€</li> <li>40×60 cm – 115€</li> <li>50×75 cm – 163€</li> <li>60×90 cm – 243€</li> <li>80×120 cm – 343€</li> <li>100×150 cm – 473€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic glass:</h2> <ol> <li>crew bolts – 10€</li> <li>clamps – 10€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>"
+}
 
 $(document).ready(function() {
 	setTimeout(function() {
 		$('#loading-page').hide();
 	}, 300);
 
-	$('.standard').html(standard);
+	$('.standard').html(specs.standard);
+	$('.semi-premium').html(specs.semiPremium);
 
 	$('.abun').html(products.abun);
 	$('.abun2').html(products.abun2);
+	$('.abun3').html(products.maryJesus);
 	$('#ham').click(function() {
 		$('#menu').css({
 			'display': 'block'
@@ -213,73 +219,61 @@ function back() {
 }
 
 function productSwitch() {
-	if (product == 1) {
-		setTimeout(function() {
-			if (currentProduct == 0) {
-				currentProduct = 2;
-			} else if (currentProduct == 3) {
-				currentProduct = 1;
-			}
+	setTimeout(function() {
+		if (currentProduct == 0) {
+			currentProduct = 2;
+		} else if (currentProduct == 3) {
+			currentProduct = 1;
+		}
 
-			if (currentProduct == 1) {
-				setTimeout(function() {
-					$('#product-wrapper-1-1').css({
-						'left': '0'
-					});
-					$('#product-wrapper-1-2').css({
-						'left': '100%'
-					});
+		if (currentProduct == 1) {
+			setTimeout(function() {
+				$('#product-wrapper-1-1').css({
+					'left': '0'
 				});
-			} else if (currentProduct == 2) {
-				setTimeout(function() {
-					$('#product-wrapper-1-1').css({
-						'left': '-100%'
-					});
-					$('#product-wrapper-1-2').css({
-						'left': '0'
-					});
-				}, );
-			}
-		});
-	} else if (product == 2) {
-		setTimeout(function() {
-			if (currentProduct == 0) {
-				currentProduct = 2;
-			} else if (currentProduct == 3) {
-				currentProduct = 1;
-			}
-
-			if (currentProduct == 1) {
-				setTimeout(function() {
-					$('#product-wrapper-1-1').css({
-						'left': '0'
-					});
-					$('#product-wrapper-1-2').css({
-						'left': '100%'
-					});
+				$('#product-wrapper-1-2').css({
+					'left': '100%'
 				});
-			} else if (currentProduct == 2) {
-				setTimeout(function() {
-					$('#product-wrapper-1-1').css({
-						'left': '-100%'
-					});
-					$('#product-wrapper-1-2').css({
-						'left': '0'
-					});
-				}, );
-			}
-		});
-	}
+			});
+		} else if (currentProduct == 2) {
+			setTimeout(function() {
+				$('#product-wrapper-1-1').css({
+					'left': '-100%'
+				});
+				$('#product-wrapper-1-2').css({
+					'left': '0'
+				});
+			}, );
+		}
+	});
 }
 
 function chooseProduct() {
+	window.scrollTo(0, 0);
+
 	if (product == 1) {
 		$('#product-1').attr('src', 'Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg');
 		$('#product-2').attr('src', 'Syriac_aramaic_lords_prayer_abun_dbashmayo_2.jpg');
 		$('.abun').html(products.abun);
+		$('.product-h3').html('Lord\'s prayer');
 	} else if (product == 2) {
 		$('#product-1').attr('src', 'lords_prayer_aramaic_cross_on_wall_1.jpg');
 		$('#product-2').attr('src', 'lords_prayer_aramaic_cross_on_wall_2.jpg');
 		$('.abun').html(products.abun2);
+		$('.product-h3').html('Lord\'s prayer – Cross shaped');
+	} else if (product == 3) {
+		$('#product-1').attr('src', 'Mary_and_Jesus_icon_aramaic_1.jpg');
+		$('#product-2').attr('src', 'Mary_and_Jesus_icon_aramaic_2.jpg');
+		$('.abun').html(products.maryJesus);
+		$('.product-h3').html('Jesus and Mary – Choose your own verse');
 	}
+}
+
+function standard() {
+	$('.semi-premium').hide();
+	$('.standard').show();
+}
+function semiPremium() {
+	$('.semi-premium').show();
+	$('.standard').hide();
 }
