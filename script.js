@@ -8,7 +8,8 @@ var products = {
 	abun2: "The Lord's Prayer in Aramaic according to Syriac tradition – Shape of a Cross. This artwork includes both the traditional frame design from the ancient Syriac Church, but also the modern colours black and gold with a stone texture on a flat surface.",
 	maryJesus: "Icon of Mary and Jesus with a customizable Bible verse below the icon. The border design is as according to Syriac tradition but with a modern gold design and a stone texture.",
 	abun3: "<b>HANDWRITTEN</b> – Lord's prayer standing (portrait) with a modern design and classic according to Syriac Church traditions.",
-	abun4: "<b>HANDWRITTEN</b> – Lord's prayer standing (portrait) with a modern design. This lighter colour of gold is great for anyone who does not want the painting to stick out as much as the previous darker golden colour. Hence why the border is also modified with a thinner and a new modern look."
+	abun4: "<b>HANDWRITTEN</b> – Lord's prayer standing (portrait) with a modern design. This lighter colour of gold is great for anyone who does not want the painting to stick out as much as the previous darker golden colour. Hence why the border is also modified with a thinner and a new modern look.",
+	abun5: "The Bible verse <b>John 3:16</b> written in Aramaic with a large Cross above. The painting has a modern design with a modern golden frame."
 }
 var specs = {
 	standard: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 60€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic glass</h2> <hr> <ol> <li>20×30 cm – 62€</li> <li>30×45 cm – 76€</li> <li>40×60 cm – 95€</li> <li>50×75 cm – 120€</li> <li>60×90 cm – 158€</li> <li>80×120 cm – 220€</li> <li>100×150 cm – 330€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic glass:</h2> <ol> <li>crew bolts – 10€</li> <li>clamps – 10€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>",
@@ -30,6 +31,7 @@ $(document).ready(function() {
 	$('.abun3').html(products.maryJesus);
 	$('.abun4').html(products.abun3);
 	$('.abun5').html(products.abun4);
+	$('.abun6').html(products.abun5);
 	$('#ham').click(function() {
 		$('#menu').css({
 			'display': 'block'
@@ -283,6 +285,11 @@ function chooseProduct() {
 		$('#product-2').attr('src', 'Lords_prayer_handwritten_light_gold_standing_in_room_2.jpg');
 		$('.abun').html(products.abun4);
 		$('.product-h3').html('HANDWRITTEN – Lord\'s prayer light gold');
+	} else if (product == 6) {
+		$('#product-1').attr('src', 'john_3_16_1.jpg');
+		$('#product-2').attr('src', 'john_3_16_2.jpg');
+		$('.abun').html(products.abun5);
+		$('.product-h3').html('John 3:16 Bible verse with Cross');
 	}
 }
 
