@@ -713,7 +713,7 @@ ul, ol {
 	width: 100vw;
 	height: 100vh;
 	background: #5a0000f8;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
