@@ -32,6 +32,14 @@ $(document).ready(function() {
 	$('.abun4').html(products.abun3);
 	$('.abun5').html(products.abun4);
 	$('.abun6').html(products.abun5);
+
+	if ($('.rabatt-span').html()) {
+		$('.orig-price').css({
+			'text-decoration': 'line-through',
+			'color': '#888'
+		});
+	}
+
 	$('#ham').click(function() {
 		$('#menu').css({
 			'display': 'block'
@@ -81,6 +89,18 @@ $(document).ready(function() {
 					}, 450);
 				});
 			});
+	});
+
+	$('#rabatt-close').click(function() {
+		setTimeout(function() {
+			$('#rabatt-container').css({
+				'top': '-50px',
+				'opacity': 0
+			});
+			setTimeout(function() {
+				$('#rabatt').fadeOut();
+			}, 500);
+		});
 	});
 });
 
