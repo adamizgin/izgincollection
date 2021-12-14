@@ -507,57 +507,6 @@ ul, ol {
 
 
 
-/* 
-
-
-
-																					Computer
-																					Computer
-																					Computer
-																					Computer
-																					Computer
-																					Computer
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-/*@media screen and (min-width: 700px) {
-	#wrapper {
-		display: none;
-	}
-	.main-computer {
-		display: block!important;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	.main-computer {
-		display: none;
-	}
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 .main-computer {
 	width: 100%;
@@ -570,7 +519,7 @@ ul, ol {
 }
 
 #home-page-computer {
-	background: url('Suryoyo_wallpaper_kthobonoyo_syriac_script_manuscript_oromoyo_suryaya_aramaya.jpg');
+	background: url('images/Suryoyo_wallpaper_kthobonoyo_syriac_script_manuscript_oromoyo_suryaya_aramaya.jpg');
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
@@ -792,3 +741,56 @@ ul, ol {
 	color: #f00;
 	text-transform: UPPERCASE;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+																					Computer
+																					Computer
+																					Computer
+																					Computer
+																					Computer
+																					Computer
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (min-width: 700px) {
+	#wrapper {
+		display: none;
+	}
+	.main-computer {
+		display: block!important;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.main-computer {
+		display: none;
+	}
+}*/
