@@ -511,6 +511,67 @@ ul, ol {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+								COMPUTER
+
+
+
+
+
+
+
+*/
+
+
 .main-computer {
 	width: 100%;
 	height: auto;
@@ -532,6 +593,10 @@ ul, ol {
 	display: none;
 }
 
+#home-page-computer .center {
+	top: 55%;
+}
+
 .computer a {
 	text-decoration: none;
 }
@@ -549,7 +614,7 @@ ul, ol {
 }
 
 #home-page-computer h2 {
-	font-size: 60px;
+	font-size: 55px;
 	font-family: Helvetica;
 	font-weight: 400;
 	text-align: center;
@@ -561,9 +626,9 @@ ul, ol {
 }
 
 #home-page-computer p {
-	font-size: 30px;
+	font-size: 25px;
 	margin: 15px 0 0;
-	line-height: 40px;
+	line-height: 35px;
 	font-weight: 300;
 }
 
@@ -582,6 +647,10 @@ ul, ol {
 
 #comp-header * {
 	color: #fff;
+}
+
+#comp-header a {
+	text-decoration: none;
 }
 
 #header-content {
@@ -653,13 +722,91 @@ ul, ol {
 }
 
 .comp-page {
-	width: 100vw;
+	width: calc(100vw - 50px);
 	min-height: 100vh;
 	background: #fff;
 	box-shadow: 0 -10px 10px 0 #0003;
 	position: relative;
 	z-index: 1;
+	padding: 25px;
 }
+
+#see-products {
+	background: linear-gradient(-145deg, #ffd564, #ffe38c, #ffc204, #ffe081, #ffc612, #ffe289, #ffc309);
+	border: none;
+	padding: 15px 25px;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 50px;
+	box-shadow: 1px 1px 5px 0 #0005;
+	transition: all 200ms ease-in-out;
+}
+#see-products:hover {
+	box-shadow: 2px 2px 5px 0 #000a;
+}
+#see-products:active {
+	filter: brightness(0.8);
+}
+
+#see-products p {
+	line-height: normal;
+	margin: 0;
+	font-size: 20px;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #rabatt {
 	width: 100vw;
@@ -762,12 +909,12 @@ ul, ol {
 
 
 
-																					Computer
-																					Computer
-																					Computer
-																					Computer
-																					Computer
-																					Computer
+																					Computer STYLE
+																					Computer STYLE
+																					Computer STYLE
+																					Computer STYLE
+																					Computer STYLE
+																					Computer STYLE
 
 
 
@@ -783,7 +930,7 @@ ul, ol {
 
 
 
-/*@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
 	#wrapper {
 		display: none;
 	}
@@ -792,8 +939,14 @@ ul, ol {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
 	.main-computer {
 		display: none;
 	}
-}*/
+}
+
+@media screen and (max-width: 980px) {
+	#home-page-computer h2 {
+		font-size: 40px;
+	}
+}
