@@ -51,6 +51,10 @@ a {
 	overflow-x: hidden;
 }
 
+.product-link {
+	text-decoration: none;
+}
+
 #header {
 	width:  calc(100vw - 50px);
 	height: auto;
