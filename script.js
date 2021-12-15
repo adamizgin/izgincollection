@@ -17,6 +17,15 @@ var specs = {
 }
 
 $(document).ready(function() {
+	// Christmas sale popup
+	if (sessionStorage) {
+		if (sessionStorage.getItem('closed') == 'closed') {
+			$('#rabatt').css({
+				'display': 'none'
+			});
+		}
+	}
+
 	setTimeout(function() {
 		$('#loading-page').hide();
 	}, 300);
@@ -32,13 +41,6 @@ $(document).ready(function() {
 	$('.abun4').html(products.abun3);
 	$('.abun5').html(products.abun4);
 	$('.abun6').html(products.abun5);
-
-	if ($('.rabatt-span').html()) {
-		$('.orig-price').css({
-			'text-decoration': 'line-through',
-			'color': '#888'
-		});
-	}
 
 	$('#ham').click(function() {
 		$('#menu').css({
@@ -56,17 +58,6 @@ $(document).ready(function() {
 				'overflow-y': 'hidden'
 			});
 		});
-	});
-	$('.preview').click(function() {
-		$('#product-info').show();
-		setTimeout(function() {
-			$('#product-info').css({
-				'left': '0'
-			});
-		});
-		setTimeout(function() {
-			$('#pages').hide();
-		}, 200);
 	});
 
 	$('.header-button').on('click', function() {
@@ -101,6 +92,8 @@ $(document).ready(function() {
 				$('#rabatt').fadeOut();
 			}, 500);
 		});
+
+		sessionStorage.setItem('closed', 'closed');
 	});
 });
 
@@ -237,13 +230,7 @@ function changePage() {
 
 function back() {
 	setTimeout(function() {
-		$('#pages').show();
-		$('#product-info').css({
-			'left': '100vw'
-		});
-		setTimeout(function() {
-			$('#product-info').hide();
-		}, 200);
+		history.back();
 	});
 }
 
@@ -311,6 +298,8 @@ function chooseProduct() {
 		$('.abun').html(products.abun5);
 		$('.product-h3').html('John 3:16 Bible verse with Cross');
 	}
+
+	window.open('products/product' + product + '.html', '_self');
 }
 
 function standard() {
