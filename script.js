@@ -270,36 +270,34 @@ function chooseProduct() {
 	if (product == 1) {
 		$('#product-1').attr('src', 'images/Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg');
 		$('#product-2').attr('src', 'images/Syriac_aramaic_lords_prayer_abun_dbashmayo_2.jpg');
-		$('.abun').html(products.abun);
+		$('#product-content .abun').html(products.abun);
 		$('.product-h3').html('Lord\'s prayer');
 	} else if (product == 2) {
 		$('#product-1').attr('src', 'images/lords_prayer_aramaic_cross_on_wall_1.jpg');
 		$('#product-2').attr('src', 'images/lords_prayer_aramaic_cross_on_wall_2.jpg');
-		$('.abun').html(products.abun2);
+		$('#product-content .abun').html(products.abun2);
 		$('.product-h3').html('Lord\'s prayer – Cross shaped');
 	} else if (product == 3) {
 		$('#product-1').attr('src', 'images/Mary_and_Jesus_icon_aramaic_1.jpg');
 		$('#product-2').attr('src', 'images/Mary_and_Jesus_icon_aramaic_2.jpg');
-		$('.abun').html(products.maryJesus);
+		$('#product-content .abun').html(products.maryJesus);
 		$('.product-h3').html('Jesus and Mary – Choose your own verse');
 	} else if (product == 4) {
 		$('#product-1').attr('src', 'images/handwritten_lords_prayer_standing_in_room_1.jpg');
 		$('#product-2').attr('src', 'images/handwritten_lords_prayer_standing_in_room_2.jpg');
-		$('.abun').html(products.abun3);
+		$('#product-content .abun').html(products.abun3);
 		$('.product-h3').html('HANDWRITTEN – Lord\'s prayer standing');
 	} else if (product == 5) {
 		$('#product-1').attr('src', 'images/Lords_prayer_handwritten_light_gold_standing_in_room_1.jpg');
 		$('#product-2').attr('src', 'images/Lords_prayer_handwritten_light_gold_standing_in_room_2.jpg');
-		$('.abun').html(products.abun4);
+		$('#product-content .abun').html(products.abun4);
 		$('.product-h3').html('HANDWRITTEN – Lord\'s prayer light gold');
 	} else if (product == 6) {
 		$('#product-1').attr('src', 'images/john_3_16_1.jpg');
 		$('#product-2').attr('src', 'images/john_3_16_2.jpg');
-		$('.abun').html(products.abun5);
+		$('#product-content .abun').html(products.abun5);
 		$('.product-h3').html('John 3:16 Bible verse with Cross');
 	}
-
-	window.open('products/product' + product + '.html', '_self');
 }
 
 function standard() {
