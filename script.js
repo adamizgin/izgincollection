@@ -265,7 +265,6 @@ function productSwitch() {
 }
 
 function chooseProduct() {
-	window.scrollTo(0, 0);
 
 	if (product == 1) {
 		$('#product-1').attr('src', 'images/Syriac_aramaic_lords_prayer_abun_dbashmayo_1.jpg');
