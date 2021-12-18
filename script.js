@@ -12,11 +12,26 @@ var products = {
 	abun5: "The Bible verse <b>John 3:16</b> written in Aramaic with a large Cross above. The painting has a modern design with a modern golden frame."
 }
 var specs = {
-	standard: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 60€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>",
-	semiPremium: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 65€</li> <li>30×45 cm – 70€</li> <li>40×60 cm – 73€</li> <li>50×75 cm – 90€</li> <li>60×90 cm – 105€</li> <li>80×120 cm – 163€</li> <li>100×150 cm – 235€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 75€</li> <li>30×45 cm – 90€</li> <li>40×60 cm – 115€</li> <li>50×75 cm – 163€</li> <li>60×90 cm – 243€</li> <li>80×120 cm – 343€</li> <li>100×150 cm – 473€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>"
+	standard: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 59.9€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>",
+	semiPremium: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 64.9€</li> <li>30×45 cm – 70€</li> <li>40×60 cm – 73€</li> <li>50×75 cm – 90€</li> <li>60×90 cm – 105€</li> <li>80×120 cm – 163€</li> <li>100×150 cm – 235€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 75€</li> <li>30×45 cm – 90€</li> <li>40×60 cm – 115€</li> <li>50×75 cm – 163€</li> <li>60×90 cm – 243€</li> <li>80×120 cm – 343€</li> <li>100×150 cm – 473€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>"
+}
+var rabatt = true;
+var clientCountry;
+var price = {
+	standard: 599,
+	semiPremium: 649,
+
+	rabatt_standard: 1078,
+	rabatt_semiPremium: 1168
 }
 
 $(document).ready(function() {
+
+
+
+
+
+
 	// Christmas sale popup
 	if (sessionStorage) {
 		if (sessionStorage.getItem('closed') == 'closed') {
@@ -26,9 +41,71 @@ $(document).ready(function() {
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+	// Identify country
+	$.get("http://ip-api.com/json", function(response) {
+		clientCountry = response.country;
+	});
+
+
+
+
+
+
+
+
+
+	// Set currency
+	setTimeout(function() {
+		if (clientCountry == 'Sweden') {
+			$('.standard-price').html(price.standard+'kr');
+			$('.semi_premium-price').html(price.semiPremium+'kr');
+
+			if (rabatt == true) {
+				$('.rabatt-price-standard').html(price.rabatt_standard+'kr');
+				$('.rabatt-price-semi_premium').html(price.rabatt_semiPremium+'kr');
+			}
+		} else {
+			$('.standard-price').html(price.standard/10+'€');
+			$('.semi_premium-price').html(price.semiPremium/10+'€');
+
+			if (rabatt == true) {
+				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
+				$('.rabatt-price-semi_premium').html(price.rabatt_semiPremium/10+'€');
+			}
+		}
+	}, 500);
+
+
+
+
+
+
+
+
+
+
+	// Loading page hide
 	setTimeout(function() {
 		$('#loading-page').hide();
 	}, 300);
+
+
+
+
+
+
+
+
+
 
 	window.scrollTo(0, 0);
 
@@ -41,6 +118,17 @@ $(document).ready(function() {
 	$('.abun4').html(products.abun3);
 	$('.abun5').html(products.abun4);
 	$('.abun6').html(products.abun5);
+
+
+
+
+
+
+
+
+
+
+
 
 	$('#ham').click(function() {
 		$('#menu').css({
@@ -59,6 +147,11 @@ $(document).ready(function() {
 			});
 		});
 	});
+
+
+
+
+
 
 	$('.header-button').on('click', function() {
 		$hano = $(this);
@@ -82,6 +175,11 @@ $(document).ready(function() {
 			});
 	});
 
+
+
+
+
+
 	$('#rabatt-close').click(function() {
 		setTimeout(function() {
 			$('#rabatt-container').css({
@@ -97,6 +195,17 @@ $(document).ready(function() {
 	});
 });
 
+
+
+
+
+
+
+
+
+
+// Functions
+
 function closeMenuButton() {
 	$('#menu').css({
 		'left': '-75%'
@@ -111,6 +220,10 @@ function closeMenuButton() {
 		});
 	}, 200);
 }
+
+
+
+
 
 function closeMenu() {
 	$('#menu').css({
@@ -129,6 +242,11 @@ function closeMenu() {
 		});
 	}, 200);
 }
+
+
+
+
+
 
 function changePage() {
 	setTimeout(function() {
@@ -228,11 +346,20 @@ function changePage() {
 	});
 }
 
+
+
+
+
+
 function back() {
 	setTimeout(function() {
 		history.back();
 	});
 }
+
+
+
+
 
 function productSwitch() {
 	setTimeout(function() {
@@ -263,6 +390,12 @@ function productSwitch() {
 		}
 	});
 }
+
+
+
+
+
+
 
 function chooseProduct() {
 
@@ -298,6 +431,13 @@ function chooseProduct() {
 		$('.product-h3').html('John 3:16 Bible verse with Cross');
 	}
 }
+
+
+
+
+
+
+
 
 function standard() {
 	$('.semi-premium').hide();
