@@ -53,7 +53,7 @@ $(document).ready(function() {
 	// Identify country
 	$.get("https://ipinfo.io", function(response) {
 		clientCountry = response.country;
-	});
+	}, 'jsonp');
 
 
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 	// Set currency
 	setTimeout(function() {
-		if (clientCountry == 'Sweden') {
+		if (clientCountry == 'SE') {
 			$('.standard-price').html(price.standard+'kr');
 			$('.semi_premium-price').html(price.semiPremium+'kr');
 
