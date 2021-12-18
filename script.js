@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 
 	// Identify country
-	$.get("http://ip-api.com/json", function(response) {
+	$.get("https://ipinfo.io", function(response) {
 		clientCountry = response.country;
 	});
 
