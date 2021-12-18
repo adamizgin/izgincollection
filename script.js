@@ -50,6 +50,22 @@ $(document).ready(function() {
 
 
 
+	if (rabatt == true) {
+		$('.orig-price').css({
+			'color': '#0008',
+			'text-decoration': 'line-through'
+		});
+	}
+
+
+
+
+
+
+
+
+
+
 	// Identify country
 	$.get("https://ipinfo.io", function(response) {
 		clientCountry = response.country;
