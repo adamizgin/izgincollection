@@ -42,9 +42,23 @@ function motive() {
 	} else if (document.querySelector('#phone-motive').value == 'Aramean flag: horiz. with "ARAMEAN" in Syriac') {
 		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Aramean-flag-horizontal_ARAMEAN_syriac.png";
 	} else if (document.querySelector('#phone-motive').value == 'Aramean flag: horiz. with "SYRIAC"') {
-		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Aramean-flag-horizontal_SYRIAC.png";
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Aramean-flag-horizontal_syriac.png";
 	} else if (document.querySelector('#phone-motive').value == 'Aramean flag: vertical') {
 		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Aramean-flag-vertical.png";
+	} else if (document.querySelector('#phone-motive').value == 'Assyrian flag') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Assyrian-flag.png";
+	} else if (document.querySelector('#phone-motive').value == 'Chaldean flag (color)') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Chaldean-flag.png";
+	} else if (document.querySelector('#phone-motive').value == 'Chaldean flag (color) with "SURYOYO"') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Chaldean-flag_SURYOYO.png";
+	} else if (document.querySelector('#phone-motive').value == 'Chaldean flag (color) with "SURYOYO" in Syriac') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Chaldean-flag_SURYOYO_syriac.png";
+	} else if (document.querySelector('#phone-motive').value == 'Chaldean flag (color) with "SURYAYA"') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Chaldean-flag_SURYAYA.png";
+	} else if (document.querySelector('#phone-motive').value == 'Chaldean flag (color) with "CHALDEAN"') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Chaldean-flag_CHALDEAN.png";
+	} else if (document.querySelector('#phone-motive').value == 'Chaldean flag (color) with "CHALDEAN" in Syriac') {
+		phoneCase = "images/phone_cases/iPhone_160-8x78-1x7-4_Chaldean-flag_CHALDEAN_syriac.png";
 	}
 
 
