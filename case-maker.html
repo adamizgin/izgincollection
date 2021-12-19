@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="icon" href="https://i.ibb.co/q1c8z7t/IZGIN-Collection-1.png">
+	<script src="https://kit.fontawesome.com/b48589663c.js" crossorigin="anonymous"></script>
+	<script src="case.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="case.css">
+	<title>Make your phone case | Izgin Collection</title>
+	<meta name="google-site-verification" content="_o9CGQH2bSAfHKnXO6U-segFW0gxdMuxRuS3NcK695M" />
+	<meta name="description" content="Aramean/Assyrian shop that sells Christian paintings. Such as the Lord's prayer in Aramaic, usually with a golden color and a modern yet traditional frame.">
+</head>
+<body>
+		
+	<div id="header" class="no-select">
+		<div id="ham">
+			<div id="home-button">
+				<i class="fas fa-home"></i>
+			</div>
+		</div>
+		<h1>IZGIN Collection</h1>
+		<div class="kunosho">
+			<h3>ܟܘܢܫܐ</h3>
+			<div></div>
+		</div>
+
+		<div class="header-border"></div>
+	</div>
+
+	<div id="product-wrapper">
+		<div class="product-wrapper">
+			<img src="images/phone_cases/iPhone_160-8x78-1x7-4.png" alt="" id="case">
+		</div>
+	</div>
+
+	<div id="product-content">
+		<h2>Design your phone case!</h2>
+		<hr>
+
+		<h3>Phone brand</h3>
+		<select name="brand" id="phone-brand">
+			<option style="display: none;">Select your phone brand</option>
+			<option>Apple – iPhone</option>
+			<option>Samsung</option>
+		</select>
+
+		<h3>Phone model</h3>
+		<select name="model" id="phone-model" disabled>
+			<option style="display: none;">Select your phone model</option>
+		</select>
+
+		<h3>Motive</h3>
+		<select name="motive" id="phone-motive" disabled onchange="motive();">
+			<option style="display: none;">Select your motive</option>
+			<option>Aramean flag: horiz.</option>
+			<option>Aramean flag: horiz. with "SURYOYO"</option>
+			<option>Aramean flag: horiz. with "SURYOYO" in Syriac</option>
+			<option>Aramean flag: horiz. with "SURYAYA"</option>
+			<option>Aramean flag: horiz. with "ARAMEAN"</option>
+			<option>Aramean flag: horiz. with "ARAMEAN" in Syriac</option>
+			<option>Aramean flag: horiz. with "SYRIAC"</option>
+			<option>Aramean flag: vertical</option>
+			<option disabled>--</option>
+			<option>Assyrian flag</option>
+			<option>Assyrian flag with "SURYOYO"</option>
+			<option>Assyrian flag with "SURYOYO" in Syriac</option>
+			<option>Assyrian flag with "SURYAYA"</option>
+			<option>Assyrian flag with "ASSYRIAN"</option>
+			<option>Assyrian flag with "ASSYRIAN" in Syriac</option>
+			<option disabled>--</option>
+			<option>Chaldean flag</option>
+			<option>Chaldean flag with "SURYOYO"</option>
+			<option>Chaldean flag with "SURYOYO" in Syriac</option>
+			<option>Chaldean flag with "SURYAYA"</option>
+			<option>Chaldean flag with "CHALDEAN"</option>
+			<option>Chaldean flag with "CHALDEAN" in Syriac</option>
+			<option disabled>––––</option>
+			<option>Own motive</option>
+		</select>
+	</div>
+
+</body>
+</html>
