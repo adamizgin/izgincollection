@@ -45,7 +45,7 @@
 		<select name="brand" id="phone-brand">
 			<option style="display: none;">Select your phone brand</option>
 			<option>Apple – iPhone</option>
-			<option>Samsung</option>
+			<!-- <option>Samsung</option> -->
 		</select>
 
 		<h3>Phone model</h3>
@@ -56,25 +56,37 @@
 		<h3>Motive</h3>
 		<select name="motive" id="phone-motive" disabled onchange="motive();">
 			<option style="display: none;">Select your motive</option>
-			<option disabled>–––– Black TPU-cases ––––</option>
-			<option>Aramean flag horizontal</option>
-			<option>Aramean flag horizontal Suryoyo</option>
-			<option>Aramean flag horizontal Suryoyo in Syriac</option>
-			<option>Aramean flag horizontal Aramean</option>
-			<option>Aramean flag horizontal Aramean in Syriac</option>
-			<option>Aramean flag vertical</option>
+			<option disabled>–– Black TPU-cases ––</option>
+			<option id="c-option-1">Lord's Prayer shape of a Cross</option>
 			<option disabled>––––</option>
-			<option>Assyrian flag</option>
-			<option>Assyrian flag (color)</option>
+			<option id="c-option-2">Aramean flag horizontal</option>
+			<option id="c-option-3">Aramean flag horizontal Suryoyo</option>
+			<option id="c-option-4">Aramean flag horizontal Suryoyo in Syriac</option>
+			<option id="c-option-5">Aramean flag horizontal Aramean</option>
+			<option id="c-option-6">Aramean flag horizontal Aramean in Syriac</option>
+			<option id="c-option-7">Aramean flag vertical</option>
 			<option disabled>––––</option>
-			<option>Chaldean flag (color)</option>
-			<option>Chaldean flag (color) Suryaya</option>
-			<option>Chaldean flag (color) Suryaya in Syriac</option>
-			<option>Chaldean flag (color) Chaldean</option>
-			<option>Chaldean flag (color) Chaldean in Syriac</option>
+			<option id="c-option-8">Assyrian flag</option>
+			<option id="c-option-9">Assyrian flag (color)</option>
 			<option disabled>––––</option>
-			<option>Own motive</option>
+			<option id="c-option-10">Chaldean flag (color)</option>
+			<option id="c-option-11">Chaldean flag (color) Suryaya in Syriac</option>
+			<option id="c-option-12">Chaldean flag (color) Chaldean</option>
+			<option id="c-option-13">Chaldean flag (color) Chaldean in Syriac</option>
+			<option disabled>––––</option>
+			<option id="c-option-14">Own motive</option>
 		</select>
+
+		<br>
+
+		<h3>Calculate the price excl. shipping</h3>
+		<button id="calculate" onclick="calculatePrice();">
+			<p>Calculate price</p>
+		</button>
+
+		<br><br><br>
+
+		<p id="calculated-price" style="font-size: 40px;">0.0€</p>
 	</div>
 
 </body>
