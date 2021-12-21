@@ -12,8 +12,8 @@ var products = {
 	abun5: "The Bible verse <b>John 3:16</b> written in Aramaic with a large Cross above. The painting has a modern design with a modern golden frame."
 }
 var specs = {
-	standard: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 59.9€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>",
-	semiPremium: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 64.9€</li> <li>30×45 cm – 70€</li> <li>40×60 cm – 73€</li> <li>50×75 cm – 90€</li> <li>60×90 cm – 105€</li> <li>80×120 cm – 163€</li> <li>100×150 cm – 235€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 75€</li> <li>30×45 cm – 90€</li> <li>40×60 cm – 115€</li> <li>50×75 cm – 163€</li> <li>60×90 cm – 243€</li> <li>80×120 cm – 343€</li> <li>100×150 cm – 473€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>screw bolts – 10€</li> <li>clamps – 10€</li> <li>invisible – free (0€)</li> </ol>"
+	standard: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 59.9€</li> <li>30×45 cm – 65€</li> <li>40×60 cm – 68€</li> <li>50×75 cm – 85€</li> <li>60×90 cm – 100€</li> <li>80×120 cm – 158€</li> <li>100×150 cm – 230€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 70€</li> <li>30×45 cm – 85€</li> <li>40×60 cm – 110€</li> <li>50×75 cm – 158€</li> <li>60×90 cm – 238€</li> <li>80×120 cm – 338€</li> <li>100×150 cm – 468€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol><li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2> <ol> <li>invisible – free (0€)</li> </ol>",
+	semiPremium: "<h2>Forex board</h2> <hr> <ol> <li>20×30 cm – 64.9€</li> <li>30×45 cm – 70€</li> <li>40×60 cm – 73€</li> <li>50×75 cm – 90€</li> <li>60×90 cm – 105€</li> <li>80×120 cm – 163€</li> <li>100×150 cm – 235€</li> </ol> <br> <h2>Acrylic aluminium glass</h2> <hr> <ol> <li>20×30 cm – 75€</li> <li>30×45 cm – 90€</li> <li>40×60 cm – 115€</li> <li>50×75 cm – 163€</li> <li>60×90 cm – 243€</li> <li>80×120 cm – 343€</li> <li>100×150 cm – 473€</li> </ol> <br><br><br> <p>Additions:</p><br> <h2>Wall mount</h2> <hr><br> <h2>Forex board:</h2> <ol><li>invisible – 30€</li> </ol> <br> <h2>Acrylic aluminium glass:</h2><ol><li>invisible – free (0€)</li> </ol>"
 }
 var rabatt = true;
 var clientCountry;
@@ -24,6 +24,8 @@ var price = {
 	rabatt_standard: 1078,
 	rabatt_semiPremium: 1168
 }
+
+var item;
 
 $(document).ready(function() {
 
@@ -209,6 +211,8 @@ $(document).ready(function() {
 
 		sessionStorage.setItem('closed', 'closed');
 	});
+
+	$('.buy-button').click(purchase);
 });
 
 
@@ -369,7 +373,11 @@ function changePage() {
 
 function back() {
 	setTimeout(function() {
-		history.back();
+		if (history.back()) {
+			history.back();
+		} else {
+			window.open('https://www.izgincollection.com/index.html', '_self');
+		}
 	});
 }
 
@@ -462,4 +470,35 @@ function standard() {
 function semiPremium() {
 	$('.semi-premium').show();
 	$('.standard').hide();
+}
+
+
+
+
+
+
+
+
+
+// BUY PRODUCT
+// REDIRECT
+function purchase() {
+	if (item == 1) {
+		sessionStorage.setItem('product', '1');
+	} else if (item == 2) {
+		sessionStorage.setItem('product', '2');
+	} else if (item == 3) {
+		sessionStorage.setItem('product', '3');
+	} else if (item == 4) {
+		sessionStorage.setItem('product', '4');
+	} else if (item == 5) {
+		sessionStorage.setItem('product', '5');
+	} else if (item == 6) {
+		sessionStorage.setItem('product', '6');
+	}
+
+
+
+
+	window.open('../purchase.html');
 }
