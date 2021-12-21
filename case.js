@@ -22,7 +22,7 @@ $(document).ready(function() {
 		}
 
 		$('#calculated-price').html(price.price);
-	}, 300);
+	}, 1000);
 
 	$('#phone-brand').on('change', function() {
 		setTimeout(function() {
@@ -152,6 +152,7 @@ function calculatePrice() {
 
 
 	price.motive = case_code.slice(-2);
+	$('#case-code').html(case_code);
 
 	if (phoneMotive !== "Own motive") {
 		setTimeout(function() {
