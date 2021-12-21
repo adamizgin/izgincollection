@@ -76,3 +76,14 @@ select {
 	width: 250px;
 	padding: 10px;
 }
+
+#calculate {
+	border: none;
+	background: #26f;
+	padding: 12.5px;
+}
+
+#calculate p {
+	color: #fff;
+	margin: 0;
+}
