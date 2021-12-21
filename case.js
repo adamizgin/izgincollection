@@ -13,6 +13,17 @@ $(document).ready(function() {
 	$.get("https://ipinfo.io", function(response) {
 		clientCountry = response.country;
 	}, 'jsonp');
+
+	setTimeout(function() {
+		if (clientCountry == "SE") {
+			price.price = "0.0kr";
+		} else {
+			price.price = "0.0€";
+		}
+
+		$('#calculated-price').html(price.price);
+	}, 300);
+
 	$('#phone-brand').on('change', function() {
 		setTimeout(function() {
 			$('#phone-model').removeAttr('disabled');
