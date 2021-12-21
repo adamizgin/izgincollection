@@ -272,6 +272,41 @@ ul, ol {
 
 
 
+.buy-button {
+	border: none;
+	background: #36d;
+	padding: 7.5px 17.5px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+}
+.buy-button:hover {
+	background: #36b;
+}
+.buy-button:active {
+	box-shadow: 1px 1px 5px 0px #0005;
+	background: #369;
+}
+
+.buy-button p {
+	color: #fff;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
