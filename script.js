@@ -495,6 +495,14 @@ function purchase() {
 		sessionStorage.setItem('product', '5');
 	} else if (item == 6) {
 		sessionStorage.setItem('product', '6');
+	} else if (item == 7) {
+		sessionStorage.setItem('product', '7');
+	} else if (item == 8) {
+		sessionStorage.setItem('product', '8');
+	} else if (item == 9) {
+		sessionStorage.setItem('product', '9');
+	} else if (item == 10) {
+		sessionStorage.setItem('product', '10');
 	}
 
 
