@@ -75,10 +75,14 @@
 			<!-- <option>Samsung</option> -->
 		</select>
 
+		<p style="margin-top: 5px;font-size: 16px;">For Samsung, please contact me on <a href="https://www.instagram.com/izgin.collection/">Instagram</a> or <a href="mailto:izgin.collection@gmail.com">mail</a>.</p>
+
 		<h3>Phone model</h3>
 		<select name="model" id="phone-model" disabled onchange="motive();">
 			<option style="display: none;">Select your phone model</option>
 		</select>
+
+		<p style="margin-top: 5px;font-size: 16px;">For other models, please contact me on <a href="https://www.instagram.com/izgin.collection/">Instagram</a> or <a href="mailto:izgin.collection@gmail.com">mail</a>.</p>
 
 		<h3>Motive</h3>
 		<select name="motive" id="phone-motive" disabled onchange="motive();">
@@ -107,13 +111,15 @@
 		<br>
 
 		<h3>Calculate the price excl. shipping</h3>
-		<button id="calculate" onclick="calculatePrice();">
-			<p>Calculate price</p>
+		<button id="calculate" onclick="calculatePrice();calculateDate(28);">
+			<p>Calculate price + date</p>
 		</button>
 
 		<br><br><br>
 
 		<p id="calculated-price" style="font-size: 40px;"></p>
+		<br>
+		<p id="calculated-date" style="font-size: 30px;"></p>
 
 		<br>
 
