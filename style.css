@@ -955,3 +955,14 @@ ul, ol {
 		font-size: 40px;
 	}
 }
+
+@media screen and (max-width: 535px) {
+	#genesis_video {
+		height: 300px!important;
+	}
+}
+@media screen and (max-width: 455px) {
+	#genesis_video {
+		height: 200px!important;
+	}
+}
