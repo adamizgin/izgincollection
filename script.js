@@ -20,9 +20,11 @@ var clientCountry;
 var price = {
 	standard: 599,
 	semiPremium: 649,
+	case: 99,
 
 	rabatt_standard: 1078,
-	rabatt_semiPremium: 1168
+	rabatt_semiPremium: 1168,
+	rabatt_case: 99
 }
 
 var item;
@@ -86,18 +88,23 @@ $(document).ready(function() {
 		if (clientCountry == 'SE') {
 			$('.standard-price').html(price.standard+'kr');
 			$('.semi_premium-price').html(price.semiPremium+'kr');
+			$('.case-price').html(price.case+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard+'kr');
 				$('.rabatt-price-semi_premium').html(price.rabatt_semiPremium+'kr');
+				$('.rabatt-case-price').html(price.rabatt_case+'kr');
 			}
 		} else {
 			$('.standard-price').html(price.standard/10+'€');
 			$('.semi_premium-price').html(price.semiPremium/10+'€');
+			$('.case-price').html(price.case/10+'€');
+			$('.case-price').html(price.rabatt_case/10+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
 				$('.rabatt-price-semi_premium').html(price.rabatt_semiPremium/10+'€');
+				$('.rabatt-case-price').html(price.rabatt_case/10+'€');
 			}
 		}
 	}, 500);
