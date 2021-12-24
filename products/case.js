@@ -50,11 +50,13 @@ function motive() {
 	let phoneMotive = document.querySelector('#phone-motive').value;
 	if (phoneMotive !== 'Select your motive') {
 		if (phoneMotive !== 'Own motive') {
-			if (model == 'iPhone 13 Pro Max' || model == 'iPhone 13 Pro') {
-				phoneCase = "../images/phone_cases/iPhone_13_Pro_Max/"+phoneMotive.replace(/ /g, '-')+".png";
-			} else if (model == 'iPhone 13') {
-				phoneCase = "../images/phone_cases/iPhone_13/"+phoneMotive.replace(/ /g, '-')+".png";
-			}
+			// if (model == 'iPhone 13 Pro Max' || model == 'iPhone 13 Pro') {
+			// 	phoneCase = "../images/phone_cases/iPhone_13_Pro_Max/"+phoneMotive.replace(/ /g, '-')+".png";
+			// } else if (model == 'iPhone 13') {
+			// 	phoneCase = "../images/phone_cases/iPhone_13/"+phoneMotive.replace(/ /g, '-')+".png";
+			// }
+
+			phoneCase = "../images/phone_cases/iPhone_13_Pro_Max/"+phoneMotive.replace(/ /g, '-')+".png";
 
 
 
