@@ -1,4 +1,4 @@
-var iphone_brands = "<option style='display: none;'>Select your phone model</option><option>iPhone 13 Pro Max</option><option>iPhone 13 Pro</option><option>iPhone 13</option> <!-- <option disabled>--</option><option>iPhone 12 Pro Max</option><option>iPhone 12 (Pro)</option><option disabled>--</option><option>iPhone 11 Pro Max</option><option>iPhone 11</option><option disabled>--</option><option>iPhone XR</option><option disabled>--</option><option>iPhone 8 Plus</option><option>iPhone 8</option><option disabled>--</option><option>iPhone X</option><option disabled>--</option><option>iPhone 7 Plus</option><option>iPhone 7</option> -->"
+var iphone_brands = "<option style='display: none;'>Select your phone model</option><option>iPhone 13 Pro Max</option><option>iPhone 13 Pro</option><option>iPhone 13</option> <option disabled>--</option><option>iPhone 12 Pro Max</option><option>iPhone 12 (Pro)</option><option disabled>--</option><option>iPhone 11 Pro Max</option><option>iPhone 11</option><option disabled>--</option><option>iPhone XR</option><option disabled>--</option><option>iPhone 8 Plus</option><option>iPhone 8</option><option disabled>--</option><option>iPhone X</option><option disabled>--</option><option>iPhone 7 Plus</option><option>iPhone 7</option> "
 var phoneCase = "images/phone_cases/iPhone_13_Pro_Max/empty.png";
 var case_code = "";
 var price = "";
@@ -106,6 +106,17 @@ function calculatePrice() {
 
 		$('#calculated-price').html(price);
 	}
+}
+
+function calculateDate(n) {
+	var t = new Date();
+	t.setDate(t.getDate() + n); 
+	var month = "0"+(t.getMonth()+1);
+	var date = "0"+t.getDate();
+	month = month.slice(-2);
+	date = date.slice(-2);
+	var date = date +"/"+month +"/"+t.getFullYear();
+	$('#calculated-date').html(date);
 }
 
 function buy_product() {
