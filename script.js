@@ -59,6 +59,8 @@ $(document).ready(function() {
 			'color': '#0008',
 			'text-decoration': 'line-through'
 		});
+	} else {
+		$('.rabatt-span').hide();
 	}
 
 
