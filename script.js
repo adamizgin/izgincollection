@@ -20,11 +20,11 @@ var clientCountry;
 var price = {
 	standard: 599,
 	semiPremium: 649,
-	case: 99,
+	case: 149,
 
 	rabatt_standard: 1078,
 	rabatt_semiPremium: 1168,
-	rabatt_case: 99
+	rabatt_case: 149
 }
 
 var item;
