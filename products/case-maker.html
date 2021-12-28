@@ -60,7 +60,7 @@
 
 	<div id="product-wrapper">
 		<div class="product-wrapper">
-			<img src="../images/phone_cases/iPhone_13_Pro_Max/empty.png" alt="" id="case">
+			<img src="../images/phone_cases/TPU/iPhone_13_Pro_Max/empty.png" alt="" id="case">
 		</div>
 	</div>
 
@@ -78,16 +78,22 @@
 		<p style="margin-top: 5px;font-size: 16px;">For Samsung, please contact me on <a href="https://www.instagram.com/izgin.collection/">Instagram</a> or <a href="mailto:izgin.collection@gmail.com">mail</a>.</p>
 
 		<h3>Phone model</h3>
-		<select name="model" id="phone-model" disabled onchange="motive();">
+		<select name="model" id="phone-model" disabled onchange="">
 			<option style="display: none;">Select your phone model</option>
 		</select>
 
 		<p style="margin-top: 5px;font-size: 16px;">For other models, please contact me on <a href="https://www.instagram.com/izgin.collection/">Instagram</a> or <a href="mailto:izgin.collection@gmail.com">mail</a>.</p>
 
+		<h3>Material</h3>
+		<select name="material" id="material" disabled onchange="motive();">
+			<option style="display: none;">Select your desired material</option>
+			<option>TPU</option>
+			<option>Tempered glass</option>
+		</select>
+
 		<h3>Motive</h3>
 		<select name="motive" id="phone-motive" disabled onchange="motive();">
 			<option style="display: none;">Select your motive</option>
-			<option disabled>–– Black TPU-cases ––</option>
 			<option id="c-option-1">Christian Lord's Prayer shape of a Cross</option>
 			<option disabled>––––</option>
 			<option id="c-option-2">Aramean flag horizontal</option>
@@ -110,8 +116,8 @@
 
 		<br>
 
-		<h3>Calculate the price excl. shipping</h3>
-		<button id="calculate" onclick="calculatePrice();calculateDate(28);">
+		<h3>Calculate the price</h3>
+		<button id="calculate" onclick="calculatePrice();calculateDate(39);">
 			<p>Calculate price + date</p>
 		</button>
 
