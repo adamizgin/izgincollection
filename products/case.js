@@ -31,6 +31,12 @@ $(document).ready(function() {
 
 	$('#phone-model').change(function() {
 		if (document.querySelector('#phone-brand').value) {
+			$('#material').removeAttr('disabled', 'false');
+		}
+	});
+
+	$('#material').change(function() {
+		if (document.querySelector('#material').value) {
 			$('#phone-motive').removeAttr('disabled', 'false');
 		}
 	});
@@ -56,7 +62,7 @@ function motive() {
 			// 	phoneCase = "../images/phone_cases/iPhone_13/"+phoneMotive.replace(/ /g, '-')+".png";
 			// }
 
-			phoneCase = "../images/phone_cases/iPhone_13_Pro_Max/"+phoneMotive.replace(/ /g, '-')+".png";
+			phoneCase = "../images/phone_cases/TPU/iPhone_13_Pro_Max/"+phoneMotive.replace(/ /g, '-')+".png";
 
 
 
@@ -118,7 +124,7 @@ function calculateDate(n) {
 	month = month.slice(-2);
 	date = date.slice(-2);
 	var date = date +"/"+month +"/"+t.getFullYear();
-	$('#calculated-date').html(date);
+	$('#calculated-date').html('This product should arrive before '+date);
 }
 
 function buy_product() {
