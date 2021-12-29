@@ -1,7 +1,7 @@
 var iphone_brands = "<option style='display: none;'>Select your phone model</option><option>iPhone 13 Pro Max</option><option>iPhone 13 Pro</option><option>iPhone 13</option> <option disabled>--</option><option>iPhone 12 Pro Max</option><option>iPhone 12 (Pro)</option><option disabled>--</option><option>iPhone 11 Pro Max</option><option>iPhone 11</option><option disabled>--</option><option>iPhone XR</option><option disabled>--</option><option>iPhone 8 Plus</option><option>iPhone 8</option><option disabled>--</option><option>iPhone X</option><option disabled>--</option><option>iPhone 7 Plus</option><option>iPhone 7</option> "
 var phoneCase = "images/phone_cases/iPhone_13_Pro_Max/empty.png";
 var case_code = "";
-var price = "";
+var cal_price = "";
 
 $(document).ready(function() {
 	// Identify country
@@ -11,12 +11,12 @@ $(document).ready(function() {
 
 	setTimeout(function() {
 		if (clientCountry == "SE") {
-			price = "0.0kr";
+			cal_price = "0.0kr";
 		} else {
-			price = "0.0€";
+			cal_price = "0.0€";
 		}
 
-		$('#calculated-price').html(price);
+		$('#calculated-price').html(cal_price);
 	}, 1000);
 
 	$('#phone-brand').on('change', function() {
@@ -31,12 +31,16 @@ $(document).ready(function() {
 
 	$('#phone-model').change(function() {
 		if (document.querySelector('#phone-brand').value) {
-			$('#material').removeAttr('disabled', 'false');
+			$('.material').removeAttr('disabled', 'false');
+			$('.for-material').css({
+				'color': '#000',
+				'border': '1px solid #000'
+			});
 		}
 	});
 
-	$('#material').change(function() {
-		if (document.querySelector('#material').value) {
+	$('.material').click(function() {
+		if ($('.material').is(':checked')) {
 			$('#phone-motive').removeAttr('disabled', 'false');
 		}
 	});
@@ -91,28 +95,28 @@ function calculatePrice() {
 		setTimeout(function() {
 			if (phoneMotive !== "Select your motive") {
 				if (clientCountry == "SE") {
-					price = "99kr";
+					cal_price = price.case+"kr";
 				} else {
-					price = "9.9€";
+					cal_price = price.case/10+"€";
 				}
 			} else {
 				if (clientCountry == "SE") {
-					price = "0.0kr";
+					cal_price = "0.0kr";
 				} else {
-					price = "0.0€";
+					cal_price = "0.0€";
 				}
 			}
 
-			$('#calculated-price').html(price);
+			$('#calculated-price').html(cal_price);
 		});
 	} else {
 		if (clientCountry == "SE") {
-			price = "199kr";
+			cal_price = "199kr";
 		} else {
-			price = "19.9€";
+			cal_price = "19.9€";
 		}
 
-		$('#calculated-price').html(price);
+		$('#calculated-price').html(cal_price);
 	}
 }
 
