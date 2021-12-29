@@ -55,11 +55,13 @@ $(document).ready(function() {
 
 
 	if (rabatt == true) {
+		$('#rabatt').show();
 		$('.orig-price').css({
 			'color': '#0008',
 			'text-decoration': 'line-through'
 		});
 	} else {
+		$('#rabatt').hide();
 		$('.rabatt-span').hide();
 	}
 
