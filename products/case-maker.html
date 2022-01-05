@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="icon" href="https://i.ibb.co/q1c8z7t/IZGIN-Collection-1.png">
+	<script src="https://kit.fontawesome.com/b48589663c.js" crossorigin="anonymous"></script>
+	<script src="case.js" type="text/javascript"></script>
+	<script src="../script.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="case.css">
+	<title>Make your phone case | Izgin Collection</title>
+	<meta name="google-site-verification" content="_o9CGQH2bSAfHKnXO6U-segFW0gxdMuxRuS3NcK695M" />
+	<meta name="description" content="Aramean/Assyrian shop that sells Christian paintings. Such as the Lord's prayer in Aramaic, usually with a golden color and a modern yet traditional frame.">
+
+	<style>
+		
+		.buy-button {
+			border: none;
+			background: #36d;
+			padding: 7.5px 17.5px;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: all 100ms ease-in-out;
+		}
+		.buy-button:hover {
+			background: #36b;
+		}
+		.buy-button:active {
+			box-shadow: 1px 1px 5px 0px #0005;
+			background: #369;
+		}
+
+		.buy-button p {
+			color: #fff;
+			margin: 0;
+		}
+
+	</style>
+</head>
+<body>
+		
+	<div id="header" class="no-select">
+		<div id="ham">
+			<div id="home-button" onclick="if (history.back()) {history.back()} else {window.open('../index.html', '_self')}">
+				<i class="fas fa-home"></i>
+			</div>
+		</div>
+		<h1>IZGIN Collection</h1>
+		<div class="kunosho">
+			<button class="buy-button" id="product-7-buy" onclick="buy_product();">
+				<p>Buy</p>
+			</button>
+		</div>
+
+		<div class="header-border"></div>
+	</div>
+
+	<div id="product-wrapper">
+		<div class="product-wrapper">
+			<img src="../images/phone-cases/TPU/iPhone-13-Pro-Max/empty.png" alt="" id="case">
+		</div>
+	</div>
+
+	<div id="product-content">
+		<h2>Design your phone case!</h2>
+		<hr>
+
+		<h3>Phone brand</h3>
+		<select name="brand" id="phone-brand">
+			<option style="display: none;">Select your phone brand</option>
+			<option>Apple – iPhone</option>
+			<!-- <option>Samsung</option> -->
+		</select>
+
+		<p style="margin-top: 5px;font-size: 16px;">For Samsung, please contact me on <a href="https://www.instagram.com/izgin.collection/">Instagram</a> or <a href="mailto:izgin.collection@gmail.com">mail</a>.</p>
+
+		<h3>Phone model</h3>
+		<select name="model" id="phone-model" disabled onchange="">
+			<option style="display: none;">Select your phone model</option>
+		</select>
+
+		<p style="margin-top: 5px;font-size: 16px;">For other models, please contact me on <a href="https://www.instagram.com/izgin.collection/">Instagram</a> or <a href="mailto:izgin.collection@gmail.com">mail</a>.</p>
+
+		<h3>Material</h3>
+
+		<input type="radio" name="material" class="material" id="material-1" disabled>
+		<label for="material-1" class="for-material">TPU</label>
+		<!-- <input type="radio" name="material" class="material" id="material-2" disabled>
+		<label for="material-2" class="for-material">Tempered glass</label> -->
+
+		<h3>Motive</h3>
+		<select name="motive" id="phone-motive" disabled onchange="motive();">
+			<option style="display: none;">Select your motive</option>
+			<option id="c-option-1">Christian Lord's Prayer shape of a Cross</option>
+			<option disabled>––––</option>
+			<option id="c-option-2">Aramean flag horizontal</option>
+			<option id="c-option-3">Aramean flag horizontal Suryoyo</option>
+			<option id="c-option-4">Aramean flag horizontal Suryoyo in Syriac</option>
+			<option id="c-option-5">Aramean flag horizontal Aramean</option>
+			<option id="c-option-6">Aramean flag horizontal Aramean in Syriac</option>
+			<option id="c-option-7">Aramean flag vertical</option>
+			<option disabled>––––</option>
+			<option id="c-option-8">Assyrian flag</option>
+			<option id="c-option-9">Assyrian flag (color)</option>
+			<option disabled>––––</option>
+			<option id="c-option-10">Chaldean flag (color)</option>
+			<option id="c-option-11">Chaldean flag (color) Suryaya in Syriac</option>
+			<option id="c-option-12">Chaldean flag (color) Chaldean</option>
+			<option id="c-option-13">Chaldean flag (color) Chaldean in Syriac</option>
+			<option disabled>––––</option>
+			<!-- <option id="c-option-14">Own motive</option> -->
+		</select>
+
+		<br>
+
+		<h3>Calculate the price</h3>
+		<button id="calculate" onclick="calculatePrice();calculateDate(39);">
+			<p>Calculate price + date</p>
+		</button>
+
+		<br><br><br>
+
+		<p id="calculated-price" style="font-size: 40px;"></p>
+		<br>
+		<p id="calculated-date" style="font-size: 30px;"></p>
+
+		<br>
+
+		<p>Please select the product you'd like, that category of motive will be its own product when pressing <span style="border: 1px dotted #444;padding: 3px 5px;">Buy</span>.</p>
+	</div>
+
+</body>
+</html>
