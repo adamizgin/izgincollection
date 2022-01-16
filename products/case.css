@@ -75,12 +75,16 @@ select {
 	all: all;
 	padding: 10px;
 	border: 1px solid #0003;
-	background: #26f;
+	/*background: #26f;*/
+	background: #6ae;
 	color: #fff;
 	max-width: 100%;
 	font-size: 16px;
 	width: 250px;
 	padding: 10px;
+}
+#phone-brand {
+	background: #26f;
 }
 
 #calculate {
