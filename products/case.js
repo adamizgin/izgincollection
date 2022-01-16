@@ -1,4 +1,5 @@
-var iphone_brands = "<option style='display: none;'>Select your phone model</option><option>iPhone 13 Pro Max</option><option>iPhone 13 Pro</option><option>iPhone 13</option> <option disabled>--</option><option>iPhone 12 Pro Max</option><option>iPhone 12 (Pro)</option><option disabled>--</option><option>iPhone 11 Pro Max</option><option>iPhone 11</option><option disabled>--</option><option>iPhone XR</option><option disabled>--</option><option>iPhone 8 Plus</option><option>iPhone 8</option><option disabled>--</option><option>iPhone X</option><option disabled>--</option><option>iPhone 7 Plus</option><option>iPhone 7</option> "
+var iphone_brands = "<option style='display: none;'>Select your phone model</option><option>iPhone 13 Pro Max</option><option>iPhone 13 Pro</option><option>iPhone 13</option><option>iPhone 13 mini</option> <option disabled>--</option><option>iPhone 12 Pro Max</option><option>iPhone 12 (Pro)</option><option>iPhone 12 mini</option><option disabled>--</option><option>iPhone 11 Pro Max</option><option>iPhone 11 Pro</option><option>iPhone 11</option><option>iPhone SE (second generation \"2020\")</option><option disabled>--</option><option>iPhone XR</option><option>iPhone XS Max</option><option>iPhone XS</option><option>iPhone X</option><option disabled>--</option><option>iPhone 8 Plus</option><option>iPhone 8</option><option disabled>--</option><option>iPhone 7 Plus</option><option>iPhone 7</option><option disabled>--</option><option>iPhone 6(s) Plus</option><option>iPhone 6(s)</option>";
+var samsung_brands = "<option style='display: none;'>Select your phone model</option><option>Samsung Galaxy S9</option><option>Samsung Galaxy S9 Plus</option><option>Samsung Galaxy S10</option><option>Samsung Galaxy S10 Plus</option><option>Samsung Galaxy S20 S11E</option><option>Samsung Galaxy S20P S11</option><option>Samsung S20 Ultra S11P</option>";
 var phoneCase = "images/phone_cases/iPhone_13_Pro_Max/empty.png";
 var case_code = "";
 var cal_price = "";
@@ -25,6 +26,8 @@ $(document).ready(function() {
 
 			if (document.querySelector('#phone-brand').value == "Apple – iPhone") {
 				$('#phone-model').html(iphone_brands);
+			} else if (document.querySelector('#phone-brand').value == "Samsung") {
+				$('#phone-model').html(samsung_brands);
 			}
 		});
 	});
