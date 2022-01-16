@@ -103,7 +103,7 @@ $(document).ready(function() {
 			$('.standard-price').html(price.standard/10+'€');
 			$('.semi_premium-price').html(price.semiPremium/10+'€');
 			$('.case-price').html(price.case/10+'€');
-			$('.case-price').html(price.rabatt_case/10+'kr');
+			$('.case-price').html(price.rabatt_case/10+'€');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
