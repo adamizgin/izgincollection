@@ -71,8 +71,8 @@ h3 {
 }
 
 select {
-	-webkit-unset: all;
-	unset: all;
+	-webkit-all: all;
+	all: all;
 	padding: 10px;
 	border: 1px solid #0003;
 	background: #26f;
