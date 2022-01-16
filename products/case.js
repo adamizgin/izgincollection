@@ -23,6 +23,9 @@ $(document).ready(function() {
 	$('#phone-brand').on('change', function() {
 		setTimeout(function() {
 			$('#phone-model').removeAttr('disabled');
+			$('#phone-model').css({
+				'background': '#26f'
+			});
 
 			if (document.querySelector('#phone-brand').value == "Apple – iPhone") {
 				$('#phone-model').html(iphone_brands);
@@ -34,7 +37,7 @@ $(document).ready(function() {
 
 	$('#phone-model').change(function() {
 		if (document.querySelector('#phone-brand').value) {
-			$('.material').removeAttr('disabled', 'false');
+			$('.material').removeAttr('disabled');
 			$('.for-material').css({
 				'color': '#000',
 				'border': '1px solid #000'
@@ -44,7 +47,10 @@ $(document).ready(function() {
 
 	$('.material').click(function() {
 		if ($('.material').is(':checked')) {
-			$('#phone-motive').removeAttr('disabled', 'false');
+			$('#phone-motive').removeAttr('disabled');
+			$('#phone-motive').css({
+				'background': '#26f'
+			});
 		}
 	});
 });
