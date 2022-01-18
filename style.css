@@ -290,7 +290,6 @@ a {
 /* REVIEWS */
 
 #reviews-wrapper {
-	padding: 25px;
 	margin: 40px 0 25px;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -1074,6 +1073,14 @@ ul, ol {
 @media screen and (max-width: 455px) {
 	#genesis_video {
 		height: 200px!important;
+	}
+}
+
+
+
+@media screen and (max-width: 366px) {
+	.profile-review h3 {
+		font-size: 1rem;
 	}
 }
 
