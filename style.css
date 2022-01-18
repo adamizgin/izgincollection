@@ -13,6 +13,7 @@
 	font-family: Helvetica, Arial, Sans-Serif;
 	color: #000;
 	outline: none;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -57,7 +58,7 @@ a {
 }
 
 #header {
-	width:  calc(100vw - 50px);
+	width: 100vw;
 	height: auto;
 	background: #fff;
 	box-shadow: 0 0 10px 0 #0003;
@@ -267,6 +268,115 @@ a {
 	display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REVIEWS */
+
+#reviews-wrapper {
+	padding: 25px;
+	margin: 40px 0 25px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+
+.review-container {
+	background: #fff;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 0 10px 0 #0003;
+}
+
+.profile-review {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.review-profile-picture {
+	height: 40px;
+	margin-right: 10px;
+	margin-top: 0px;
+}
+
+.review-container h3 {
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.review-stars {
+	display: block;
+	position: absolute;
+	bottom: 5%;
+	left: 50px;
+}
+
+.review-stars i {
+	color: #fc0;
+	font-size: 14px;
+}
+
+.review-container p {
+	margin: 0;
+}
+
+.review-translation {
+	margin-top: 5px;
+}
+
+.review-translation * {
+	color: #444;
+}
+
+.review-translation p {
+	font-weight: 300;
+}
+
+.review-image {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.review-image img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card {
 	width: calc(100% - 20px);
 	max-width: 450px;
@@ -331,7 +441,7 @@ hr {
 }
 
 .preview {
-	width: calc(100% - 30px);
+	width: 100%;
 	max-width: 325px;
 	height: 370px;
 	background: #fff;
@@ -964,5 +1074,17 @@ ul, ol {
 @media screen and (max-width: 455px) {
 	#genesis_video {
 		height: 200px!important;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 630px) {
+	#reviews-wrapper {
+		grid-template-columns: 1fr 1fr;
 	}
 }
