@@ -305,7 +305,7 @@ a {
 
 .profile-review {
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .review-profile-picture {
@@ -356,6 +356,13 @@ a {
 
 .review-image img {
 	width: 100%;
+}
+
+.profile-review p {
+	position: absolute;
+	font-size: 16px;
+	white-space: nowrap;
+	color: #444;
 }
 
 
