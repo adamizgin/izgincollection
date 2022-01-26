@@ -4,7 +4,7 @@ p {
 
 #header {
 	padding-left: 72.5px;
-	width: calc(100vw - 72.5px);
+	width: 100vw;
 }
 
 #home-button {
