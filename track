@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+  
+  $(function() {
+    location.replace('https://global.cainiao.com/detail.htm?mailNoList=LS031862354NL&spm=a3708.7860688.0.d01');
+  });
+
+</script>
+</head>
+<body>
+</body>
+</html>
