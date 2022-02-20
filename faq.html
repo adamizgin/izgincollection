@@ -25,20 +25,50 @@
 </head>
 <body>
 
-	<div id="info-header">
-		<div id="back-button" onclick="back();">
-			<i class="fas fa-chevron-circle-left"></i>
+	<div id="header" class="no-select about-header">
+		<div id="ham">
+			<div id="ham1" class="hamLine"></div>
+			<div id="ham2" class="hamLine"></div>
+			<div id="ham3" class="hamLine"></div>
 		</div>
-		<h1 style="font-size:26px;font-weight: 400;font-family: 'Cabin';display: inline-block;word-break: keep-all;white-space: nowrap;">IZGIN Collection</h1>
+		<h1>IZGIN Collection</h1>
 		<div class="kunosho">
 			<h3>ܟܘܢܫܐ</h3>
 			<div></div>
 		</div>
-
-		<div class="header-border"></div>
 	</div>
 
 	<div class="main" id="help-page">
+		<div id="menu" class="no-select">
+			<div id="menu-close" onclick="closeMenu();">
+				<div class="close-line" id="close1"></div>
+				<div class="close-line" id="close2"></div>
+			</div>
+			<div id="menu-content">
+				<ul>
+					<a href="index.html">
+						<li id="products-button">
+							<i class="fas fa-shopping-cart"></i>Products
+						</li>
+					</a>
+					<hr>
+					<a href="about.html">
+						<li id="home-button">
+							<i class="fas fa-home"></i>About & contact
+						</li>
+					</a>
+					<hr>
+					<a href="faq.html">
+						<li id="help-button">
+							<i class="fas fa-question-circle"></i>FAQ <span style="font-size: 16px; color: #345;">(Help)</span>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+			<div id="menu-stop"></div>
+
+
 		<h3>Frequently asked questions</h3>
 		<br>
 		<h2>How do I order a product?</h2>
