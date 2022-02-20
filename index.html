@@ -46,12 +46,28 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-210324658-1">
 	</script>
+	<script src="scroll.js"></script>
 </head>
 <body>
 
 	<!-- <div id="maintenance" style="width:100vw;height:100vh;position:fixed;z-index:1000;top:0;left:0;background:#fff;">
 		<span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;font-weight:400;"><b>IZGIN Collection</b> is currently under maintenance.</span>
 	</div> -->
+
+	<div id="header" class="no-select">
+		<div id="ham">
+			<div id="ham1" class="hamLine"></div>
+			<div id="ham2" class="hamLine"></div>
+			<div id="ham3" class="hamLine"></div>
+		</div>
+		<h1>IZGIN Collection</h1>
+		<div class="kunosho">
+			<h3>ܟܘܢܫܐ</h3>
+			<div></div>
+		</div>
+
+		<div class="header-border"></div>
+	</div>
 
 	<div id="wrapper">
 		<div id="pages">
@@ -64,450 +80,33 @@
 				</div>
 				<div id="menu-content">
 					<ul>
-						<li id="home-button" onclick="changePage();currentPage = '#home-page'; closeMenuButton();">
-							<i class="fas fa-home"></i>Home
-						</li>
+						<a href="index.html">
+							<li id="products-button">
+								<i class="fas fa-shopping-cart"></i>Products
+							</li>
+						</a>
 						<hr>
-						<li id="products-button" onclick="changePage();currentPage = '#products-page'; closeMenuButton();">
-							<i class="fas fa-shopping-cart"></i>Products
-						</li>
+						<a href="about.html">
+							<li id="home-button">
+								<i class="fas fa-home"></i>About & contact
+							</li>
+						</a>
 						<hr>
-						<li id="contact-button" onclick="changePage();currentPage = '#contact-page'; closeMenuButton();">
-							<i class="fas fa-phone-alt"></i>Contact
-						</li>
-						<hr>
-						<li id="help-button" onclick="changePage();currentPage = '#help-page'; closeMenuButton();">
-							<i class="fas fa-question-circle"></i>FAQ <span style="font-size: 16px; color: #345;">(Help)</span>
-						</li>
+						<a href="faq.html">
+							<li id="help-button">
+								<i class="fas fa-question-circle"></i>FAQ <span style="font-size: 16px; color: #345;">(Help)</span>
+							</li>
+						</a>
 					</ul>
 				</div>
 			</div>
 			<div id="menu-stop"></div>
-
-			<div id="header" class="no-select">
-				<div id="ham">
-					<div id="ham1" class="hamLine"></div>
-					<div id="ham2" class="hamLine"></div>
-					<div id="ham3" class="hamLine"></div>
-				</div>
-				<h1>IZGIN Collection</h1>
-				<div class="kunosho">
-					<h3>ܟܘܢܫܐ</h3>
-					<div></div>
-				</div>
-
-				<div class="header-border"></div>
-			</div>
-
-			<div class="main" id="home-page">
-				<div class="content">
-					<h2>Welcome to IZGIN Collection!</h2>
-					<br>
-					<p><b>IZGIN Collection</b> is a collection of products, such as prayers in Aramaic (the language of Jesus Christ) and other products (which for the most part target the Aramean people).</p>
-					<br>
-					<p>The products are all designed by me which are very well thought through. The main font used in the products is called Serto BeQaco that I have created which is made out of my own handwriting.</p>
-					<br>
-
-					<iframe id="genesis_video" style="width:100%;height: 350px" src="https://www.youtube.com/embed/w8QKn_bUdlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-					<br><br><br>
-					<button id="home-coll" class="no-select" onclick="currentPage = '#products-page';changePage();">SEE COLLECTION</button>
-				</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<!-- REVIEWS -->
-
-				<h3 style="text-align:center;font-size:25px;margin-top: 100px;">Reviews</h3>
-
-				<div class="content" id="reviews-wrapper">
-					<div class="review-container">
-						<div class="profile-review">
-							<img src="https://lh3.googleusercontent.com/a-/AOh14GgWjSggMDwsRkr-5VTazCHw9MSNRCia-eSfRyA7=w60-h60-p-rp-mo-br100" alt="" class="review-profile-picture">
-							<h3>Cassandra Suryayto</h3>
-							<div class="review-stars">
-								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-								<p>Phone case – TPU</p>
-							</div>
-
-						</div>
-
-						<div class="review-text">
-							<p>Bäst kvalite❤️💛</p>
-							<div class="review-translation">
-								<p><b>(Translation)</b></p>
-								<p>Best quality❤️💛</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="review-container">
-						<div class="profile-review">
-							<img src="https://lh3.googleusercontent.com/a-/AOh14GgS-njZ1r26sZdt0PIeDdQkzW2cjxwjTvR9lqqbzA=w60-h60-p-rp-mo-ba3-br100" alt="" class="review-profile-picture">
-							<h3>Furious Alert</h3>
-							<div class="review-stars">
-								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-								<p>Phone case – TPU</p>
-							</div>
-						</div>
-
-						<div class="review-text">
-							<p>Excellent products!!!</p>
-						</div>
-					</div>
-
-					<div class="review-container">
-						<div class="profile-review">
-							<img src="https://lh3.googleusercontent.com/a-/AOh14Ghrgtdd-dCDz4WYyxj-6-3HlKWKwnhUr3jXDf6IQA=w60-h60-p-rp-mo-br100" alt="" class="review-profile-picture">
-							<h3>Anthony Malkey</h3>
-							<div class="review-stars">
-								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-								<p>Phone case – TPU</p>
-							</div>
-						</div>
-
-						<div class="review-text">
-							<p>Bra kvalitet skal</p>
-							<div class="review-translation">
-								<p><b>(Translation)</b></p>
-								<p>Good quality case</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="review-container">
-						<div class="profile-review">
-							<img src="https://lh3.googleusercontent.com/a/AATXAJzGUSkh2XiFwN38GEt2MT10e1J_lnKCjFzHCw9HHA=w60-h60-p-rp-mo-br100" alt="" class="review-profile-picture">
-							<h3>Izla Bahnaneh</h3>
-							<div class="review-stars">
-								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-								<p>Phone case – TPU</p>
-							</div>
-						</div>
-
-						<div class="review-text">
-							<p>Jättebra kvalité!</p>
-							<div class="review-translation">
-								<p><b>(Translation)</b></p>
-								<p>Excellent quality!</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="review-container">
-						<div class="profile-review">
-							<img src="https://lh3.googleusercontent.com/a-/AOh14GgmcfvR4Uq1QSAg9Uyl-XIXS7_NbuNRTAZ_dkGU=w60-h60-p-rp-mo-br100" alt="" class="review-profile-picture">
-							<h3>Tibelia Suryayto</h3>
-							<div class="review-stars">
-								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-								<p>Lord's Prayer – Cross shaped</p>
-							</div>
-						</div>
-
-						<div class="review-text">
-							<p>Fina tavlor!❤️💛 Super nöjd</p>
-							<div class="review-image">
-								<img src="images/reviews/Christian-Lord's-Prayer-in-Aramaic-Suryoyo-Tibelia-Suryayto.jpeg" alt="Christian Lord's Prayer in Aramaic">
-							</div>
-							<div class="review-translation">
-								<p><b>(Translation)</b></p>
-								<p>Nice paintings!❤️💛 Super happy!</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-
-
-
-
-
-
-
-
-				<div class="content">
-					<p>Contact us:</p>
-					<br>
-					<div class="card" id="home-card">
-						<div class="card-icon"></div>
-						<h5>Izgin.Collection</h5>
-						<div class="card-buttons">
-							<a href="https://www.instagram.com/izgin.collection/" target="_blank">
-								<button class="no-select">Instagram</button>
-							</a>
-							<a href="mailto:izgin.collection@gmail.com?subject" target="_blank">
-								<button class="no-select">Mail</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-
-
-
-
-
-
-
-
-
-
-
-
-
-			 -->
-
-			<div class="main" id="products-page">
-				<em style="color: #345;">Below you will see previews for each product and its category. The products could be available in different colours, to see more details about a certain product, click on it.</em>
-				<br><br>
-				<h3>Decoration</h3>
-				<hr><br>
-
-				<a href="products/product1.html" class="product-link">
-					<div class="preview no-select" id="preview1" onclick="product = 1;chooseProduct();standard();">
-						<img src="images/Syriac-aramaic-lords-prayer-abun-dbashmayo-2.jpg" alt="Vertical painting of the Lord's Prayer in Aramaic">
-						<div class="preview-bottom">
-							<h4>Lord's prayer</h4>
-							<div class="preview-text">
-								<p class="abun"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product2.html" class="product-link">
-					<div class="preview no-select" id="preview2" onclick="product = 2;chooseProduct();standard();">
-						<img src="images/lords-prayer-aramaic-cross-on-wall-2.jpg" alt="Vertical painting of the Lord's Prayer in Aramaic">
-						<div class="preview-bottom">
-							<h4>Lord's prayer – Cross shaped</h4>
-							<div class="preview-text">
-								<p class="abun2"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product3.html" class="product-link">
-					<div class="preview no-select" id="preview3" onclick="product = 3;chooseProduct();semiPremium();">
-						<img src="images/Mary-and-Jesus-icon-aramaic-2.jpg" alt="Painting of Jesus and Mary with Bible verse below in Aramaic">
-						<div class="preview-bottom">
-							<h4>Jesus and Mary – Choose your verse</h4>
-							<div class="preview-text">
-								<p class="abun3"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price semi_premium-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-semi_premium"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product4.html" class="product-link">
-					<div class="preview no-select" id="preview4" onclick="product = 4;chooseProduct();standard();">
-						<img src="images/handwritten-lords-prayer-standing-in-room-2.jpg" alt="Portrait painting of the Lord's Prayer in Aramaic">
-						<div class="preview-bottom">
-							<h4>HANDWRITTEN – Lord's prayer standing</h4>
-							<div class="preview-text">
-								<p class="abun4"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product5.html" class="product-link">
-					<div class="preview no-select" id="preview5" onclick="product = 5;chooseProduct();standard();">
-						<img src="images/Lords-prayer-handwritten-light-gold-standing-in-room-1.jpg" alt="Portrait painting of the Lord's Prayer in Aramaic">
-						<div class="preview-bottom">
-							<h4>HANDWRITTEN – Lord's prayer light gold</h4>
-							<div class="preview-text">
-								<p class="abun5"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product6.html" class="product-link">
-					<div class="preview no-select" id="preview6" onclick="product = 6;chooseProduct();standard();">
-						<img src="images/john-3-16-2.jpg" alt="painting of a golden cross with the Bible verse John 3:16 in Aramaic">
-						<div class="preview-bottom">
-							<h4>John 3:16 Bible verse with Cross</h4>
-							<div class="preview-text">
-								<p class="abun6"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/case-maker.html" class="product-link">
-					<div class="preview no-select" id="preview7">
-						<img src="images/phone-cases/TPU/iPhone-13-Pro-Max/Aramean-flag-horizontal-Suryoyo-in-Syriac.png" alt=" Suryoyo phone case with the Aramean flag" style="width: auto;position: relative;left: 50%;transform: translateX(-50%);">
-						<div class="preview-bottom">
-							<h4>Phone case</h4>
-							<div class="preview-text">
-								<p>Customize your own phone case! Both for iPhone and soon Samsung as well. The phone cases are made out of TPU and the motives are all designed by me. You can also design your own motive, for instance, a flag with your name below it. To order a custom design that is not in my list, contact me on Instagram or mail.</p>
-							</div>
-							<span class="preview-price"><span class="orig-price price case-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-case-price"></span></span></span>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<div class="main" id="contact-page">
-				<h3>Contact</h3>
-				<hr>
-				<p>You can contact us via Instagram or Email</p>
-				<p>Website programmed and designed by Adam Izgin</p>
-				<br>
-
-				<div class="card" id="home-card">
-					<div class="card-icon"></div>
-					<h5>Izgin.Collection</h5>
-					<div class="card-buttons">
-						<a href="https://www.instagram.com/izgin.collection/" target="_blank">
-							<button class="no-select">Instagram</button>
-						</a>
-						<a href="mailto:izgin.collection@gmail.com?subject" target="_blank">
-							<button class="no-select">Mail</button>
-						</a>
-					</div>
-				</div>
-
-				<div class="card" id="home-card">
-					<div class="card-icon"></div>
-					<h5>adayizgin</h5>
-					<div class="card-buttons">
-						<a href="https://www.instagram.com/adayizgin/" target="_blank">
-							<button class="no-select">Instagram</button>
-						</a>
-						<a href="mailto:adamizgin.jobb@gmail.com?subject" target="_blank">
-							<button class="no-select">Mail</button>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="main" id="help-page">
-				<h3>Frequently asked questions</h3>
-				<br>
-				<h3>How do I order a product?</h3>
-				<hr>
-				<p>Orders are made via Instagram's Direct Message to our official Instagram account <a href="https://www.instagram.com/izgin.collection/" target="_blank">@izgin.collection</a> or send a private message to <a href="https://www.facebook.com/adam.izgin/" target="_blank">adam.izgin</a> on FaceBook. Tell us which product you would like to order (plus eventual additions) and where to send the product. <br> An example of an order would be:</p>
-				<p style="background: #f8f8f8; padding: 15px; text-align: initial;">– Hi! I'd like to purchase the Lord's prayer in acrylic aluminium glass, 30×45cm with an invisible wall mount.</p>
-
-				<br><br>
-
-				<h3>Which payment method is acceptable?</h3>
-				<hr>
-				<p><b>PayPal</b>, or <b>Swish</b> if you live in Sweden.</p>
-
-				<br><br>
-
-				<h3>When will my product be delivered?</h3>
-				<hr>
-				<p>It usually takes 9 business days for the products to be delivered. But it can be different depending on in which country you live.</p>
-
-				<br><br>
-
-				<h3>How much does the shipping cost?</h3>
-				<hr>
-				<p>The shipping is free if you live in Sweden. If you live inside the EU, the shipping amount will be from 15€ to 20€. Shipping outside of the EU is currently not possible.</p>
-			</div>
 		</div>
-	</div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- 
-
-
-	
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-
-
-
-	 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div class="main-computer computer" id="home-page-computer">
+		<div class="main-computer computer" id="home-page-computer">
 		<div id="comp-header">
 			<img src="images/izgin-collection-logo-transparent.png" alt="" id="comp-logo">
 			<div id="header-content">
@@ -548,25 +147,170 @@
 				</a>
 			</div>
 		</div>
+	</div>
 
-		<div id="computer-background"></div>
-		<div class="content">
-			<div class="center">
-				<h3>Welcome to IZGIN Collection!</h3>
-				<p><b>IZGIN Collection</b> is a collection of products, such as prayers in Aramaic (the language of Jesus Christ) and other products (which for the most part target the Aramean people).</p>
-				<br>
-				<p>The products are all designed by me which are very well thought through. The main font used in the products is called Serto BeQaco that I have created which is made out of my own handwriting.</p>
 
-				<center>
-					<a href="products/products.html">
-						<button id="see-products">
-							<p>See products</p>
-						</button>
+
+			<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+				Choose product
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 -->
+
+			<div class="main" id="products">
+				<div id="products-navigator">
+					<h3 id="decoration-anchor">Decoration</h3>
+					<h3 id="case-and-accessories-anchor">Phone case & accessories</h3>
+					<h3 id="clothes-anchor">Clothes</h3>
+				</div>
+
+				<h3 id="decoration">Decoration</h3>
+
+				<div class="products-wrapper">
+					<a href="products/product1.html" class="product-link">
+						<div class="preview no-select" id="preview1" onclick="product = 1;chooseProduct();standard();">
+							<img src="images/preview/Syriac-aramaic-lords-prayer-abun-dbashmayo.jpg" alt="Vertical painting of the Lord's Prayer in Aramaic">
+							<h4>Lord's prayer</h4>
+							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
+						</div>
 					</a>
-				</center>
+
+					<a href="products/product2.html" class="product-link">
+						<div class="preview no-select" id="preview2" onclick="product = 2;chooseProduct();standard();">
+							<img src="images/preview/Syriac-aramaic-lords-prayer-cross.jpg" alt="Vertical painting of the Lord's Prayer in Aramaic">
+							<h4>Lord's prayer – Cross shaped</h4>
+							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
+						</div>
+					</a>
+
+					<a href="products/product3.html" class="product-link">
+						<div class="preview no-select" id="preview3" onclick="product = 3;chooseProduct();semiPremium();">
+							<img src="images/preview/Mary-and-Jesus-icon-aramaic.jpg" alt="Painting of Jesus and Mary with Bible verse below in Aramaic">
+							<h4>Jesus and Mary – Choose your verse</h4>
+							<span class="preview-price"><span class="orig-price price semi_premium-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-semi_premium"></span></span></span>
+						</div>
+					</a>
+
+					<a href="products/product4.html" class="product-link">
+						<div class="preview no-select" id="preview4" onclick="product = 4;chooseProduct();standard();">
+							<img src="images/preview/handwritten-lords-prayer-standing.jpg" alt="Portrait painting of the Lord's Prayer in Aramaic">
+							<h4>HANDWRITTEN – Lord's prayer standing</h4>
+							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
+						</div>
+					</a>
+
+					<a href="products/product5.html" class="product-link">
+						<div class="preview no-select" id="preview5" onclick="product = 5;chooseProduct();standard();">
+							<img src="images/preview/Lords-prayer-handwritten-light-gold-standing.jpg" alt="Portrait painting of the Lord's Prayer in Aramaic">
+							<h4>HANDWRITTEN – Lord's prayer light gold</h4>
+							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
+						</div>
+					</a>
+
+					<a href="products/product6.html" class="product-link">
+						<div class="preview no-select" id="preview6" onclick="product = 6;chooseProduct();standard();">
+							<img src="images/preview/john-3-16.jpg" alt="painting of a golden cross with the Bible verse John 3:16 in Aramaic">
+							<h4>John 3:16 Bible verse with Cross</h4>
+							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
+						</div>
+					</a>
+
+					<!-- <a href="products/product8.html" class="product-link">
+						<div class="preview no-select" id="preview8">
+							<img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.6435-9/95144964_942645946167355_842149108566196224_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=9267fe&_nc_ohc=cDlgdn9gnbsAX_1ehOF&tn=bptc31F7yknFBi-5&_nc_ht=scontent-arn2-1.xx&oh=00_AT_rDIje9I86kDMDSYXtVWsDFC8YiEf2FmfVJtTUWIF8NQ&oe=62375F95" alt=" Suryoyo phone case with the Aramean flag">
+							<h4>Cross – car decoration</h4>
+							<span class="preview-price"><span class="orig-price price car-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-car-price"></span></span></span>
+						</div>
+					</a> -->
+				</div>
+
+				<hr>
+
+				<h3 id="case-and-accessories">Phone case & accessories</h3>
+
+				<div class="products-wrapper">
+					<a href="products/case-maker.html" class="product-link">
+						<div class="preview no-select" id="preview7">
+							<img src="images/phone-cases/TPU/iPhone-13-Pro-Max/Aramean-flag-horizontal-Suryoyo-in-Syriac.png" alt=" Suryoyo phone case with the Aramean flag">
+							<h4>Phone case</h4>
+							<span class="preview-price"><span class="orig-price price case-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-case-price"></span></span></span>
+						</div>
+					</a>
+				</div>
+
+				<hr>
+
+				<h3 id="clothes">Clothes – Comming soon</h3>
+
+				<!-- <div class="products-wrapper">
+					<a href="products/case-maker.html" class="product-link">
+						<div class="preview no-select" id="preview8">
+							<img src="images/preview/zip-hoodie.jpg" alt=" Suryoyo phone case with the Aramean flag">
+							<h4>Zip hoodie</h4>
+							<span class="preview-price"><span class="orig-price price hoodie-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-case-price"></span></span></span>
+						</div>
+					</a>
+
+					<a href="products/case-maker.html" class="product-link">
+						<div class="preview no-select" id="preview9">
+							<img src="images/preview/hoodie.jpg" alt=" Suryoyo phone case with the Aramean flag">
+							<h4>Hoodie</h4>
+							<span class="preview-price"><span class="orig-price price hoodie-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-case-price"></span></span></span>
+						</div>
+					</a>
+
+					<a href="products/case-maker.html" class="product-link">
+						<div class="preview no-select" id="preview10">
+							<img src="images/preview/pike.jpg" alt=" Suryoyo phone case with the Aramean flag">
+							<h4>Polo shirt</h4>
+							<span class="preview-price"><span class="orig-price price polo-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-case-price"></span></span></span>
+						</div>
+					</a>
+				</div> -->
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
 
 	<div id="rabatt">
 		<div id="rabatt-container">
@@ -579,7 +323,7 @@
 			<br>
 			<h4>Only now! Christmas sale: <b>10% off on every product</b> if you order more than one.</h4>
 			<br>
-			<h4><b>50% off</b> on every phone case if you order two! This means buy 2, <b>get one for free!</b></h4>
+			<h4><b>50% off</b> on every phone case if you order at least two! This means buy 2, <b>get one for free!</b></h4>
 		</div>
 	</div>
 	
