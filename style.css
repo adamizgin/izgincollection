@@ -37,8 +37,14 @@ h3 {
 	margin: 0 0 10px;
 }
 
+.center h3 {
+	color: #fff;
+	font-size: 40px;
+}
+
 a {
 	color: #00f;
+	all: unset;
 }
 
 .center {
@@ -144,20 +150,29 @@ a {
 }
 
 .main {
-	position: absolute;
-	width: calc(100% - 60px);
+	width: 100%;
 	height: auto;
 	min-height: 40vh;
 	transition: all 200ms ease-in-out;
-	top: 100px;
-	left: 150vw;
-	transform: translateX(-50%);
-	display: none;
+	left: 0;
+	position: relative;
+}
+
+/*#products {
+	padding: 25px;
+}*/
+
+#products h3 {
+	font-size: 30px;
+	margin: 50px 0;
+	text-align: center;
+	color: #444;
+	font-family: 'Cabin';
 }
 
 #home-page {
-	left: 50%;
 	display: block;
+	padding: 25px 15px;
 }
 
 .content {
@@ -203,7 +218,7 @@ a {
 	width: 40px;
 	height: 40px;
 	background: transparent;
-	margin: 30px;
+	margin: 20px;
 	position: relative;
 	border-radius: 50%;
 	transition: all 200ms ease-in-out;
@@ -238,7 +253,8 @@ a {
 }
 
 #menu-content ul {
-	padding: 25px;
+	padding: 25px 0;
+	margin: 0;
 }
 
 #menu-content li {
@@ -446,44 +462,68 @@ hr {
 	margin: 10px 0;
 }
 
+.products-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 60px;
+	place-items: center;
+	width: 100%;
+}
+
+#products-navigator {
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-content: center;
+	box-shadow: 0 0 10px #0003;
+}
+
+#products-navigator h3 {
+	cursor: pointer;
+}
+
+#products-navigator a {
+	all: unset;
+}
+
 .preview {
 	width: 100%;
-	max-width: 325px;
-	height: 370px;
 	background: #fff;
 	border-radius: 5px;
-	box-shadow: 0 0 10px 0 #0003;
 	padding: 15px;
 	position: relative;
-	display: inline-block;
-	margin: 0 7.5px 15px;
+	margin-bottom: 25px;
 }
+.preview * {
+	font-family: 'Cabin';
+}
+
 .preview img {
 	width: 100%;
 	max-height: 50%;
-	border: 1px solid #0001;
 	background-size: cover;
 	background-position: 50% 50%;
 }
-.preview-bottom {
-	position: absolute;
-	bottom: 0;
-	width: calc(100% - 30px);
-	height: calc(50% - 20px);
+
+.preview h4 {
+	margin: 25px 0 5px;
+	text-align: center;
+	font-size: 23px;
+	color: #222;
 }
-.preview-text {
-	width: 100%;
-	height: calc(100% - 80px);
-	background: transparent;
-	position: absolute;
-	overflow-y: scroll;
-	top: 47.5%;
-	transform: translateY(-50%);
-}
+
 .preview-price {
-	position: absolute;
-	bottom: 10px;
+	width: 100%;
+	display: block;
 	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+}
+
+.price {
+	color: #555;
 }
 
 #product-info {
@@ -498,11 +538,11 @@ hr {
 }
 
 #info-header {
-	width: calc(100vw - 65px);
+	width: 100vw;
 	height: auto;
 	background: #fff;
 	box-shadow: 0 0 10px 0 #0003;
-	position: fixed;
+	position: relative;
 	left: 0;
 	top: 0;
 	z-index: 6;
@@ -695,11 +735,11 @@ ul, ol {
 	min-height: 40vh;
 	top: 100px;
 	position: absolute;
-	z-index: 0;
+	z-index: 1;
 }
 
 #home-page-computer {
-	background: url('images/Suryoyo-wallpaper-kthobonoyo-syriac-script-manuscript-oromoyo-suryaya-aramaya.jpg');
+	background: url('images/Izgin-Collection-phone-cases-wallpaper.jpg');
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
@@ -707,7 +747,18 @@ ul, ol {
 	background-repeat: no-repeat;
 	position: relative;
 	top: 0;
-	display: none;
+	display: block;
+}
+
+#home-page-computer::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 75%;
 }
 
 #home-page-computer .center {
@@ -750,10 +801,9 @@ ul, ol {
 }
 
 #comp-header {
-	width: calc(100% - 30px);
-    border-bottom: 1px solid #ffffff20;
-    height: 70px;
-    background: transparent;
+	width: 100%;
+    height: 100px;
+    background: #0005;
     padding: 15px;
     position: relative;
     text-transform: uppercase;
@@ -779,7 +829,7 @@ ul, ol {
 }
 
 .header-button {
-	height: calc(100% - 30px);
+	height: 100%;
     display: inline-block;
     width: auto;
     position: relative;
@@ -839,7 +889,7 @@ ul, ol {
 }
 
 .comp-page {
-	width: calc(100vw - 50px);
+	width: 100vw;
 	min-height: 100vh;
 	background: #fff;
 	box-shadow: 0 -10px 10px 0 #0003;
@@ -1049,19 +1099,34 @@ ul, ol {
 
 
 
-
+@media screen and (max-width: 960px) {
+	#products h3 {
+		font-size: 20px;
+	}
+}
 
 @media screen and (min-width: 720px) {
-	#wrapper {
+	#header {
 		display: none;
 	}
-	.main-computer {
+
+	#info-header {
+		display: none!important;
+	}
+	.about-header {
 		display: block!important;
 	}
 }
 
 @media screen and (max-width: 720px) {
-	.main-computer {
+	.preview h4 {
+		font-size: 19px;
+	}
+	.info-header {
+		display: block;
+	}
+
+	#comp-header {
 		display: none;
 	}
 }
@@ -1072,14 +1137,46 @@ ul, ol {
 	}
 }
 
+@media screen and (max-width: 670px) {
+	#products h3 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 635px) {
+	.products-wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#products h3 {
+		font-size: 16px;
+	}
+}
+
 @media screen and (max-width: 535px) {
 	#genesis_video {
 		height: 300px!important;
 	}
 }
+
+@media screen and (max-width: 515px) {
+	#products-navigator {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 455px) {
 	#genesis_video {
 		height: 200px!important;
+	}
+	.preview h4 {
+		font-size: 16px;
+	}
+	.price {
+		font-size: 17px;
 	}
 }
 
