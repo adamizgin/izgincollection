@@ -20,11 +20,16 @@ var clientCountry;
 var price = {
 	standard: 599,
 	semiPremium: 649,
-	case: 149,
+	case: 219,
+	car: 199,
+	hoodie: 329,
+	polo: 249,
 
 	rabatt_standard: 1078,
 	rabatt_semiPremium: 1168,
-	rabatt_case: 149
+	rabatt_case: 149,
+	rabatt_car: 149,
+	rabatt_clothes: 299,
 }
 
 var item;
@@ -93,22 +98,32 @@ $(document).ready(function() {
 			$('.standard-price').html(price.standard+'kr');
 			$('.semi_premium-price').html(price.semiPremium+'kr');
 			$('.case-price').html(price.case+'kr');
+			$('.car-price').html(price.car+'kr');
+			$('.hoodie-price').html(price.hoodie+'kr');
+			$('.polo-price').html(price.polo+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard+'kr');
 				$('.rabatt-price-semi_premium').html(price.rabatt_semiPremium+'kr');
 				$('.rabatt-case-price').html(price.rabatt_case+'kr');
+				$('.car-price').html(price.rabatt_car+'kr');
+				$('.hoodie-price').html(price.hoodie+'kr');
 			}
 		} else {
 			$('.standard-price').html(price.standard/10+'€');
 			$('.semi_premium-price').html(price.semiPremium/10+'€');
 			$('.case-price').html(price.case/10+'€');
 			$('.case-price').html(price.rabatt_case/10+'€');
+			$('.car-price').html(price.car/10+'€');
+			$('.hoodie-price').html(price.hoodie/10+'€');
+			$('.polo-price').html(price.polo/10+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
 				$('.rabatt-price-semi_premium').html(price.rabatt_semiPremium/10+'€');
 				$('.rabatt-case-price').html(price.rabatt_case/10+'€');
+				$('.car-price').html(price.rabatt_car/10+'€');
+				$('.hoodie-price').html(price.hoodie/10+'€');
 			}
 		}
 	}, 500);
@@ -275,107 +290,6 @@ function closeMenu() {
 }
 
 
-
-
-
-
-function changePage() {
-	setTimeout(function() {
-		if (currentPage == "#home-page") {
-			$('#home-page').css({
-				'display': 'block'
-			});
-			$('#products-page').css({
-				'left': '150vw'
-			});
-			$('#contact-page').css({
-				'left': '150vw'
-			});
-			$('#help-page').css({
-				'left': '150vw'
-			});
-			setTimeout(function() {
-				$('#home-page').css({
-					'left': '50vw'
-				});
-				setTimeout(function() {
-					$('#products-page').hide();
-					$('#contact-page').hide();
-					$('#help-page').hide();
-				}, 250);
-			}, 100);
-		} else if (currentPage == "#products-page") {
-			$('#products-page').css({
-				'display': 'block'
-			});
-			$('#home-page').css({
-				'left': '150vw'
-			});
-			$('#contact-page').css({
-				'left': '150vw'
-			});
-			$('#help-page').css({
-				'left': '150vw'
-			});
-			setTimeout(function() {
-				$('#products-page').css({
-					'left': '50vw'
-				});
-				setTimeout(function() {
-					$('#home-page').hide();
-					$('#contact-page').hide();
-					$('#help-page').hide();
-				}, 250);
-			}, 100);
-		} else if (currentPage == "#contact-page") {
-			$('#contact-page').css({
-				'display': 'block'
-			});
-			$('#home-page').css({
-				'left': '150vw'
-			});
-			$('#products-page').css({
-				'left': '150vw'
-			});
-			$('#help-page').css({
-				'left': '150vw'
-			});
-			setTimeout(function() {
-				$('#contact-page').css({
-					'left': '50vw'
-				});
-				setTimeout(function() {
-					$('#home-page').hide();
-					$('#products-page').hide();
-					$('#help-page').hide();
-				}, 250);
-			}, 100);
-		} else if (currentPage == "#help-page") {
-			$('#help-page').css({
-				'display': 'block'
-			});
-			$('#home-page').css({
-				'left': '150vw'
-			});
-			$('#products-page').css({
-				'left': '150vw'
-			});
-			$('#contact-page').css({
-				'left': '150vw'
-			});
-			setTimeout(function() {
-				$('#help-page').css({
-					'left': '50vw'
-				});
-				setTimeout(function() {
-					$('#home-page').hide();
-					$('#products-page').hide();
-					$('#contact-page').hide();
-				}, 250);
-			}, 100);
-		}
-	});
-}
 
 
 
