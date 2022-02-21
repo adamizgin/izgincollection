@@ -1076,6 +1076,64 @@ ul, ol {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comming-soon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #000a;
+	width: calc(100% - 30px);
+	height: calc(100% - 30px);
+}
+
+.comming-soon p {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 5px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 
