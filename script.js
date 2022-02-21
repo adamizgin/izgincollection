@@ -23,7 +23,8 @@ var price = {
 	case: 219,
 	car: 199,
 	hoodie: 329,
-	polo: 249,
+	polo: 199,
+	rosary: 249,
 
 	rabatt_standard: 1078,
 	rabatt_semiPremium: 1168,
@@ -101,6 +102,7 @@ $(document).ready(function() {
 			$('.car-price').html(price.car+'kr');
 			$('.hoodie-price').html(price.hoodie+'kr');
 			$('.polo-price').html(price.polo+'kr');
+			$('.rosary-price').html(price.rosary+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard+'kr');
@@ -117,6 +119,7 @@ $(document).ready(function() {
 			$('.car-price').html(price.car/10+'€');
 			$('.hoodie-price').html(price.hoodie/10+'€');
 			$('.polo-price').html(price.polo/10+'kr');
+			$('.rosary-price').html(price.rosary/10+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
