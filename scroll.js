@@ -16,6 +16,11 @@ $(document).ready(function() {
 			scrollTop: $("#clothes").offset().top - 150
 		}, 1250);
 	});
+	$('#products-header-button').click(function() {
+		$('html, body').animate({
+			scrollTop: $("#products-navigator").offset().top - 100
+		}, 500);
+	});
 
 
 
