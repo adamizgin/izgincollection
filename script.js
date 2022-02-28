@@ -39,9 +39,6 @@ $(document).ready(function() {
 
 
 
-
-
-
 	// Christmas sale popup
 	if (sessionStorage) {
 		if (sessionStorage.getItem('closed') == 'closed') {
