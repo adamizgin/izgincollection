@@ -2,50 +2,6 @@ p {
 	line-height: unset;
 }
 
-#header {
-	padding-left: 72.5px;
-	width: 100vw;
-}
-
-#home-button {
-	width: 55px;
-	height: 30px;
-	background: #0002;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	border-radius: 0 2px 2px;
-}
-#home-button::before {
-	content: '';
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	top: -10px;
-	left: -10px;
-	transform: rotate(-45deg);
-}
-#home-button::after {
-	content: '';
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	bottom: -10px;
-	left: -10px;
-	transform: rotate(45deg);
-}
-
-#home-button i {
-	color: #444;
-	position: absolute;
-	top: 50%;
-	left: calc(50% + 2.5px);
-	transform: translate(-50%, -50%);
-	font-size: 16px;
-}
-
 #product-wrapper {
 	top: 63px;
 	height: calc(100vh - 63px*2 - 15px);
@@ -98,11 +54,11 @@ select {
 	margin: 0;
 }
 
-.material {
+.material, .shipping-choise {
 	display: none;
 }
 
-.for-material {
+.for-material, .for-shipping {
 	display: inline-block;
 	position: relative;
 	background: #fff;
@@ -114,6 +70,11 @@ select {
 }
 
 .material:checked + .for-material {
+	background: #26f;
+	color: #fff!important;
+}
+
+.shipping-choise:checked + .for-shipping {
 	background: #26f;
 	color: #fff!important;
 }
