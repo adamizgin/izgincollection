@@ -47,6 +47,36 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-210324658-1">
 	</script>
 	<script src="scroll.js"></script>
+
+	<style type="text/css">
+		
+		@media screen and (min-width: 720px) {
+			#header {
+				display: none;
+			}
+
+			#info-header {
+				display: none!important;
+			}
+			.about-header {
+				display: block!important;
+			}
+		}
+
+		@media screen and (max-width: 720px) {
+			.preview h4 {
+				font-size: 19px;
+			}
+			.info-header {
+				display: block;
+			}
+
+			#comp-header {
+				display: none;
+			}
+		}
+
+	</style>
 </head>
 <body>
 
@@ -273,14 +303,11 @@
 						</div>
 					</a>
 
-					<a class="product-link">
+					<a href="products/prayer-beads.html" class="product-link">
 						<div class="preview no-select" id="preview7">
 							<img src="images/preview/prayer-beads.jpg" alt=" Suryoyo phone case with the Aramean flag">
 							<h4>Prayer beads</h4>
 							<span class="preview-price"><span class="orig-price price rosary-price"></span> <span class="rabatt-span">&nbsp;two for&nbsp;&nbsp;<span class="price rabatt-case-price"></span></span></span>
-							<div class="comming-soon">
-								<p>Comming soon</p>
-							</div>
 						</div>
 					</a>
 				</div>
