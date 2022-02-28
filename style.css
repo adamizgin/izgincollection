@@ -61,6 +61,7 @@ a {
 
 .product-link {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #header {
@@ -1114,6 +1115,34 @@ ul, ol {
 
 
 
+.product-buy {
+	margin-top: 40px;
+}
+
+
+
+
+.product-options {
+	margin-top: 63px;
+	width: 100%;
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	place-items: center;
+	border-bottom: 1px solid #0001;
+	box-shadow: 0 0 5px 0 #0001;
+	position: relative;
+}
+
+.product-options h2 {
+	font-family: 'Cabin';
+	cursor: pointer;
+	color: #555;
+	transition: color 125ms ease-in-out;
+}
+
+
 
 
 
@@ -1160,32 +1189,6 @@ ul, ol {
 @media screen and (max-width: 960px) {
 	#products h3 {
 		font-size: 20px;
-	}
-}
-
-@media screen and (min-width: 720px) {
-	#header {
-		display: none;
-	}
-
-	#info-header {
-		display: none!important;
-	}
-	.about-header {
-		display: block!important;
-	}
-}
-
-@media screen and (max-width: 720px) {
-	.preview h4 {
-		font-size: 19px;
-	}
-	.info-header {
-		display: block;
-	}
-
-	#comp-header {
-		display: none;
 	}
 }
 
