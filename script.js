@@ -115,8 +115,8 @@ $(document).ready(function() {
 			$('.case-price').html(price.rabatt_case/10+'€');
 			$('.car-price').html(price.car/10+'€');
 			$('.hoodie-price').html(price.hoodie/10+'€');
-			$('.polo-price').html(price.polo/10+'kr');
-			$('.rosary-price').html(price.rosary/10+'kr');
+			$('.polo-price').html(price.polo/10+'€');
+			$('.rosary-price').html(price.rosary/10+'€');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
