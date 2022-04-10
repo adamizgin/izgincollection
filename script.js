@@ -25,6 +25,7 @@ var price = {
 	hoodie: 329,
 	polo: 199,
 	rosary: 249,
+	spiga_cross: 199,
 
 	rabatt_standard: 1078,
 	rabatt_semiPremium: 1168,
@@ -100,6 +101,7 @@ $(document).ready(function() {
 			$('.hoodie-price').html(price.hoodie+'kr');
 			$('.polo-price').html(price.polo+'kr');
 			$('.rosary-price').html(price.rosary+'kr');
+			$('.spiga-cross-price').html(price.spiga_cross+'kr');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard+'kr');
@@ -117,6 +119,7 @@ $(document).ready(function() {
 			$('.hoodie-price').html(price.hoodie/10+'€');
 			$('.polo-price').html(price.polo/10+'€');
 			$('.rosary-price').html(price.rosary/10+'€');
+			$('.spiga-cross-price').html(price.spiga_cross/10+'€');
 
 			if (rabatt == true) {
 				$('.rabatt-price-standard').html(price.rabatt_standard/10+'€');
