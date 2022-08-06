@@ -221,10 +221,7 @@ hr {
 }
 
 #product-wrapper {
-	top: 50px;
 	width: 100vw;
-	height: calc(100vh - 200px);
-	position: relative;
 	overflow-x: hidden;
 }
 
@@ -303,6 +300,11 @@ ul, ol {
 	text-align: justify;
 }
 
+#product-wrapper {
+	max-width: calc(100% - 30px);
+	margin: auto;
+}
+
 
 
 
@@ -342,6 +344,39 @@ ul, ol {
 
 
 
+#mobile-header-button {
+	width: 40px;
+	height: 40px;
+	background: #000;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	border-radius: 50%;
+}
+
+.mobile-header-line {
+	width: 30px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 150ms ease-in-out;
+}
+
+.mobile-header-line:first-child {
+	top: 25%;
+}
+
+.mobile-header-line:last-child {
+	top: 75%;
+}
+
+
+
+
+
 
 
 
@@ -362,12 +397,6 @@ ul, ol {
 	}
 }
 
-@media screen and (min-width: 1000px) {
-	#product-wrapper {
-		height: calc(100vh - 50px);
-	}
-}
-
 @media screen and (max-width: 1000px) {
 	#header-content {
 		width: 90%;
@@ -375,12 +404,39 @@ ul, ol {
 }
 
 @media screen and (max-width: 765px) {
+	#product-header {
+		transition: all 250ms ease-in-out;
+		position: relative;
+		height: 60px;
+	}
+
 	#header-content {
 		display: none;
+		height: auto;
+		position: relative;
+		top: -100%;
+		opacity: 0;
+		transition: all 250ms ease-in-out;
 	}
-}
 
-@media screen and (max-width: 720px) {
+	#header-buttons {
+		display: block;
+		margin: 10px 0 0;
+		text-align: left;
+		transition: all 250ms ease-in-out;
+	}
+
+	.header-button {
+		padding: 10px 0;
+	}
+
+	#header-buttons h3 {
+		font-size: 20px;
+	}
+
+	#product-header {
+		padding: 15px;
+	}
 }
 
 @media screen and (max-width: 720px) {
