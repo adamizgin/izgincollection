@@ -28,7 +28,7 @@ function openHeader() {
 		$('#product-header').css({
 			'height': '321px'
 		});
-	});
+	}, 100);
 }
 
 function closeHeader() {
@@ -57,5 +57,5 @@ function closeHeader() {
 		$('#product-header').css({
 			'height': '60px'
 		});
-	});
+	}, 100);
 }
