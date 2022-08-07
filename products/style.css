@@ -104,7 +104,7 @@ hr {
 	color: #fff;
 }
 
-#product-header h1 {
+h1 {
 	font-family: 'Red Hat Display';
 	text-align: center;
 	font-size: 30px;
@@ -449,5 +449,29 @@ ul, ol {
 
 	#comp-header {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	#mobile-header-button {
+		top: 10px;
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	h1 {
+		font-size: 20px;
+	}
+
+	#mobile-header-button {
+		width: 30px;
+		height: 35px;
+		top: 12.5px;
+		left: 17.5px;
 	}
 }
