@@ -1,206 +1,61 @@
-var currentPage = "#home-page";
-var prePage;
-var compDir;
-var rabatt = false;
-var clientCountry;
-
-var item;
-
-$(document).ready(function() {
-
-
-
-	// Christmas sale popup
-	if (sessionStorage) {
-		if (sessionStorage.getItem('closed') == 'closed') {
-			$('#rabatt').css({
-				'display': 'none'
-			});
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-	if (rabatt == true) {
-		$('#rabatt').show();
-		$('.orig-price').css({
-			'color': '#0008',
-			'text-decoration': 'line-through'
-		});
-	} else {
-		$('#rabatt').hide();
-		$('.rabatt-span').hide();
-	}
-
-
-
-
-
-
-
-
-
-
-	// Loading page hide
-	setTimeout(function() {
-		$('#loading-page').hide();
-	}, 300);
-
-
-
-
-
-
-
-
-
-
-	window.scrollTo(0, 0);
-
-
-
-
-
-
-
-
-
-
-
-
-	$('#ham').click(function() {
-		$('#menu').css({
-			'display': 'block'
-		});
-		setTimeout(function() {
-			$('#menu').css({
-				'left': '0'
-			});
-			$(currentPage).css({
-				'left': '80%'
-			});
-			$('#menu-stop').fadeIn(150);
-			$('html').css({
-				'overflow-y': 'hidden'
-			});
-		});
-	});
-
-
-
-
-
-
-	$('.header-button').on('click', function() {
-		$hano = $(this);
-			$(this).find('.header-animation').show();
-			$(this).find('.header-animation').css({
-				'height': '0',
-				'transition': 'none'
-			});
-			setTimeout(function() {
-				$hano.find('.header-animation').css({
-					'transition': 'height 250ms ease-in-out'
-				});
-				setTimeout(function() {
-					$hano.find('.header-animation').css({
-						'height': '100%'
-					});
-					setTimeout(function() {
-						$hano.find('.header-animation').fadeOut();
-					}, 450);
-				});
-			});
-	});
-
-
-
-
-
-
-	$('#rabatt-close').click(function() {
-		setTimeout(function() {
-			$('#rabatt-container').css({
-				'top': '-50px',
-				'opacity': 0
-			});
-			setTimeout(function() {
-				$('#rabatt').fadeOut();
-			}, 500);
-		});
-
-		sessionStorage.setItem('closed', 'closed');
-	});
+$(function() {
+	
 });
 
-
-
-
-
-
-
-
-
-
-// Functions
-
-function closeMenuButton() {
-	$('#menu').css({
-		'left': '-75%'
+function openHeader() {
+	$('.mobile-header-line').eq(1).css({
+		'left': '100%',
+		'opacity': '0'
 	});
+	$('.mobile-header-line').css({
+		'top': '50%'
+	});
+	$('.mobile-header-line').eq(0).css({
+		'transform': 'translate(-50%, -50%) rotate(45deg)'
+	});
+	$('.mobile-header-line').eq(2).css({
+		'transform': 'translate(-50%, -50%) rotate(-45deg)'
+	});
+
+	$('#header-content').show();
+
 	setTimeout(function() {
-		$('#menu').css({
-			'display': 'none'
+		$('#mobile-header-button').click(closeHeader);
+		$('#header-content').css({
+			'opacity': '1',
+			'top': '0'
 		});
-		$('#menu-stop').fadeOut(150);
-		$('html').css({
-			'overflow-y': 'auto'
+		$('#product-header').css({
+			'height': '321px'
 		});
-	}, 200);
+	}, 100);
 }
 
-
-
-
-
-function closeMenu() {
-	$('#menu').css({
-		'left': '-75%'
+function closeHeader() {
+	$('.mobile-header-line').eq(1).css({
+		'left': '50%',
+		'opacity': '1'
 	});
-	$(currentPage).css({
-		'left': '50%'
+	$('.mobile-header-line').eq(0).css({
+		'top': '25%'
+	});
+	$('.mobile-header-line').eq(2).css({
+		'top': '75%'
+	});
+	$('.mobile-header-line').eq(0).css({
+		'transform': 'translate(-50%, -50%) rotate(0deg)'
+	});
+	$('.mobile-header-line').eq(2).css({
+		'transform': 'translate(-50%, -50%) rotate(0deg)'
 	});
 	setTimeout(function() {
-		$('#menu').css({
-			'display': 'none'
+		$('#mobile-header-button').click(openHeader);
+		$('#header-content').css({
+			'opacity': '0',
+			'top': '-100%'
 		});
-		$('#menu-stop').fadeOut(150);
-		$('html').css({
-			'overflow-y': 'auto'
+		$('#product-header').css({
+			'height': '60px'
 		});
-	}, 200);
-}
-
-
-
-
-
-
-
-
-function back() {
-	setTimeout(function() {
-		if (history.back()) {
-			history.back();
-		} else {
-			window.open('https://www.izgincollection.com/index.html', '_self');
-		}
-	});
+	}, 100);
 }
