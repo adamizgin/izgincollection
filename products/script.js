@@ -1,6 +1,5 @@
 var currentPage = "#home-page";
 var prePage;
-var product;
 var compDir;
 var rabatt = false;
 var clientCountry;
